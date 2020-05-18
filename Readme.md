@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Serafima Mokrousova](https://up.htmlacademy.ru/htmlcss/28/user/1247093).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Пудников](https://htmlacademy.ru/profile/id71418).
 
 ---
 
