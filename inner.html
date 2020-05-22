@@ -9,26 +9,37 @@
 
 
 <nav>
-<a>
-<img src="logo.svg" width="138" height="70" alt="Логотип путешествий по городу Седона»">
+<a href="index.html">   <!--А какой у меня адрес главной страницы? Или достаточно заглушки?-->
+<img src="img/logo.svg" width="170" height="70" alt="Логотип путешествий по городу Седона»">
 </a>
-<li><a href="blank.html">Информация</a></li>
-<li><a href="blank.html">Фото и видео </a></li>
-<li><a href="map.html">Карта Штата</a></li>
+<li><a href="#">Информация</a></li>
+<li><a href="#">Фото и видео </a></li>
+<li><a href="#">Карта Штата</a></li>
 <li><a href="catalog.html">Гостиницы</a></li>
 </nav>
 </header>
 <main>
+
 <section>
 <p>
 <img src="product-1.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
 </p>
 <p>Amara Resort & Spa <br>
-Гостиница От 4000 Р.
+Гостиница От 4000 Р. </p>
 <button type="button">Подробнее</button>
 <button type="button">Забронировать</button>
-</p>
-<p>Рейтинг: 9,2</p>
+
+<!--Добавила звездочки как нам скинули в вопросах...если это не праильно и это только изображение - удялю-->
+<fieldset>
+  <legend> Удоволетворение пользователя </legend>
+  <input type="radio" name="star" value="1" aria-label="Отвратительно" checked>
+  <input type="radio" name="star" value="2" aria-label="Терпеть можно">
+  <input type="radio" name="star" value="3" aria-label="Нормально">
+  <input type="radio" name="star" value="4" aria-label="Хорошо">
+  <input type="radio" name="star" value="5" aria-label="Великолепно">
+
+</fieldset>
+<p>Рейтинг: 8,5</p>
 </section>
 
 <section>
@@ -36,11 +47,19 @@
 <img src="product-2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
 </p>
 <p>Desert Quail Inn <br>
-Мотель От 3000 Р.
+Мотель От 3000 Р.</p>
 <button type="button">Подробнее</button>
 <button type="button">Забронировать</button>
-</p>
-<p>Рейтинг: 9,2</p>
+
+<fieldset>
+  <legend> Удоволетворение пользователя </legend>
+  <input type="radio" name="star" value="1" aria-label="Отвратительно" checked>
+  <input type="radio" name="star" value="2" aria-label="Терпеть можно">
+  <input type="radio" name="star" value="3" aria-label="Нормально">
+  <input type="radio" name="star" value="4" aria-label="Хорошо">
+  <input type="radio" name="star" value="5" aria-label="Великолепно">
+</fieldset>
+<p>Рейтинг: 8,9</p>
 </section>
 
 <section>
@@ -48,10 +67,17 @@
 <img src="product-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
 </p>
 <p>Villas at Poco Diablo <br>
-Апартаменты От 2000 Р.
+Апартаменты От 2000 Р.</p>
 <button type="button">Подробнее</button>
 <button type="button">Забронировать</button>
-</p>
+<fieldset>
+  <legend> Удоволетворение пользователя </legend>
+  <input type="radio" name="star" value="1" aria-label="Отвратительно" checked>
+  <input type="radio" name="star" value="2" aria-label="Терпеть можно">
+  <input type="radio" name="star" value="3" aria-label="Нормально">
+  <input type="radio" name="star" value="4" aria-label="Хорошо">
+  <input type="radio" name="star" value="5" aria-label="Великолепно">
+</fieldset>
 <p>Рейтинг: 9,2</p>
 </section>
 </main>
@@ -66,19 +92,19 @@
 <h2>Контакты</h2>
 <ul>
 <li>
-<a href="#">Twitter</a>
+<a href="#" target="blank">Twitter</a>
 </li>
 <li>
-<a href="#">Facebook</a>
+<a href="#" target="blank">Facebook</a>
 </li>
 <li>
-<a href="#">Youtube</a>
+<a href="#" target="blank">Youtube</a>
 </li>
 </ul>
 </section>
 <p>
 Website by
-<a href="https://htmlacademy.ru">HTML Academy</a>
+<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 </p>
 </footer>
 </body>
