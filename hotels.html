@@ -1,120 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<title>HTML Academy: Седона</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
 </head>
 <body>
-<header>
+  <header>
 
+    <nav>
+      <a href="index.html">
+        <img src="img/logo-sedona.svg" width="100" height="50" alt="Логотип путешествий по городу Седона»">
+      </a>
+      <li><a href="#">Информация</a></li>
+      <li><a href="#">Фото и видео </a></li>
+      <li><a href="#">Карта Штата</a></li>
+      <li><a href="hotels.html">Гостиницы</a></li>
+    </nav>
+  </header>
+  <main>
 
-<nav>
-<a href="index.html">   <!--А какой у меня адрес главной страницы? Или достаточно заглушки?-->
-<img src="img/logo-sedona.svg" width="100" height="50" alt="Логотип путешествий по городу Седона»">
-</a>
-<li><a href="#">Информация</a></li>
-<li><a href="#">Фото и видео </a></li>
-<li><a href="#">Карта Штата</a></li>
-<li><a href="hotels.html">Гостиницы</a></li>
-</nav>
-</header>
-<main>
+    <article>
+      <p>
+        <img src="img/apart1.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
+      </p>
+      <p>Amara Resort & Spa
+        Гостиница От 4000 Р.
+      </p>
+      <button type="button">Подробнее</button>
+      <button type="button">Забронировать</button>
 
-<article>
-<p>
-<img src="img/apart1.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
-</p>
-<p>Amara Resort & Spa
-Гостиница От 4000 Р. </p>
-<button type="button">Подробнее</button>
-<button type="button">Забронировать</button>
+      <!--Добавила звездочки как нам скинули в вопросах...если это не правильно и это только изображение - удалю...-->
+      <img src="img/hotelrating4stars.svg" alt="Четыре звезды рейтинга">
+      <form action="https://echo.htmlacademy.ru/courses" method="GET">
+        <fieldset>
+          <legend> Удоволетворение пользователя </legend>
+          <input type="radio" name="star" value="1" aria-label="Отвратительно" checked>
+          <input type="radio" name="star" value="2" aria-label="Терпеть можно">
+          <input type="radio" name="star" value="3" aria-label="Нормально">
+          <input type="radio" name="star" value="4" aria-label="Хорошо">
+          <input type="radio" name="star" value="5" aria-label="Великолепно">
+        </fieldset>
+       </form>
+       <p>Рейтинг: 8,5</p>
+     </article>
 
-<!--Добавила звездочки как нам скинули в вопросах...если это не правильно и это только изображение - удалю...-->
-<img src="img/hotelrating4stars.svg" alt="Четыре звезды рейтинга">
+     <article>
+       <p>
+         <img src="img/apart2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
+       </p>
+       <p>Desert Quail Inn
+         Мотель От 3000 Р.</p>
+         <button type="button">Подробнее</button>
+         <button type="button">Забронировать</button>
+         <img src="img/hotelrating3stars.svg" alt="Три звезды рейтинга">
+         <form action="https://echo.htmlacademy.ru/courses" method="GET">
+           <fieldset>
+             <legend> Удоволетворение пользователя </legend>
+             <input type="radio" name="star2" value="1" aria-label="Отвратительно" checked>
+             <input type="radio" name="star2" value="2" aria-label="Терпеть можно">
+             <input type="radio" name="star2" value="3" aria-label="Нормально">
+             <input type="radio" name="star2" value="4" aria-label="Хорошо">
+             <input type="radio" name="star2" value="5" aria-label="Великолепно">
+           </fieldset>
+         </form>
+         <p>Рейтинг: 8,9</p>
+       </article>
 
-<form action="https://echo.htmlacademy.ru/courses" method="GET">
-<fieldset>
-  <legend> Удоволетворение пользователя </legend>
-  <input type="radio" name="star" value="1" aria-label="Отвратительно" checked>
-  <input type="radio" name="star" value="2" aria-label="Терпеть можно">
-  <input type="radio" name="star" value="3" aria-label="Нормально">
-  <input type="radio" name="star" value="4" aria-label="Хорошо">
-  <input type="radio" name="star" value="5" aria-label="Великолепно">
+       <article>
+         <p>
+           <img src="img/apart3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+           <p>Villas at Poco Diablo
+             Апартаменты От 2000 Р.</p>
+             <button type="button">Подробнее</button>
+             <button type="button">Забронировать</button>
+             <img src="img/hotelrating2stars.svg" alt="Две звезды рейтинга">
+             <form action="https://echo.htmlacademy.ru/courses" method="GET">
+               <fieldset>
+                 <legend> Удоволетворение пользователя </legend>
+                 <input type="radio" name="star3" value="1" aria-label="Отвратительно" checked>
+                 <input type="radio" name="star3" value="2" aria-label="Терпеть можно">
+                 <input type="radio" name="star3" value="3" aria-label="Нормально">
+                 <input type="radio" name="star3" value="4" aria-label="Хорошо">
+                 <input type="radio" name="star3" value="5" aria-label="Великолепно">
+               </fieldset>
+             </form>
+             <p>Рейтинг: 9,2</p>
+           </article>
+         </main>
 
-</fieldset> </form>
-<p>Рейтинг: 8,5</p>
-</article>
-
-<article>
-<p>
-<img src="img/apart2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
-</p>
-<p>Desert Quail Inn
-Мотель От 3000 Р.</p>
-<button type="button">Подробнее</button>
-<button type="button">Забронировать</button>
-<img src="img/hotelrating3stars.svg" alt="Три звезды рейтинга">
-
- <form action="https://echo.htmlacademy.ru/courses" method="GET">
-<fieldset>
-  <legend> Удоволетворение пользователя </legend>
-  <input type="radio" name="star2" value="1" aria-label="Отвратительно" checked>
-  <input type="radio" name="star2" value="2" aria-label="Терпеть можно">
-  <input type="radio" name="star2" value="3" aria-label="Нормально">
-  <input type="radio" name="star2" value="4" aria-label="Хорошо">
-  <input type="radio" name="star2" value="5" aria-label="Великолепно">
-</fieldset>  </form>
-<p>Рейтинг: 8,9</p>
-</article>
-
-<article>
-<p>
-<img src="img/apart3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-</p>
-<p>Villas at Poco Diablo
-Апартаменты От 2000 Р.</p>
-<button type="button">Подробнее</button>
-<button type="button">Забронировать</button>
-
-<img src="img/hotelrating2stars.svg" alt="Две звезды рейтинга">
-<form action="https://echo.htmlacademy.ru/courses" method="GET">
-<fieldset>
-  <legend> Удоволетворение пользователя </legend>
-  <input type="radio" name="star3" value="1" aria-label="Отвратительно" checked>
-  <input type="radio" name="star3" value="2" aria-label="Терпеть можно">
-  <input type="radio" name="star3" value="3" aria-label="Нормально">
-  <input type="radio" name="star3" value="4" aria-label="Хорошо">
-  <input type="radio" name="star3" value="5" aria-label="Великолепно">
-</fieldset> </form>
-<p>Рейтинг: 9,2</p>
-</article>
-</main>
-
-<footer>
-<section>
-<p>#visitSEDONA
-ТЕЛ: +7(495) 666-01
-</p>
-</section>
-<section>
-<h2>Контакты</h2>
-<ul>
-<li>
-<a href="href="https://twitter.com/" target="blank"> <img src="img/twitter.svg" alt="Логотип Твиттера"></a>
-</li>
-<li>
-<a href="href="http://www.facebook.com" target="blank"> <img src="img/facebook.svg" alt="Логотип Фейсбука"></a>
-</li>
-<li>
-<a href="href="https://www.youtube.com/" target="blank"> <img src="img/youtube.svg" alt="Логотип Ютуба"></a>
-</li>
-</ul>
-</section>
-<p>
-Website by
-<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
-<img src="img/logo-htmlacademy.svg" alt="Логотип-ссылка на сайт Htmlacademy" width="100" height="50"></a>
-</p>
-</footer>
-</body>
-</html>
+         <footer>
+           <section>
+             <p>#visitSEDONA
+               ТЕЛ: +7(495) 666-01
+             </p>
+           </section>
+           <section>
+             <h2>Контакты</h2>
+             <ul>
+               <li>
+                 <a href="href="https://twitter.com/" target="blank"> <img src="img/twitter.svg" alt="Логотип Твиттера"></a>
+               </li>
+               <li>
+                 <a href="href="http://www.facebook.com" target="blank"> <img src="img/facebook.svg" alt="Логотип Фейсбука"></a>
+               </li>
+               <li>
+                 <a href="href="https://www.youtube.com/" target="blank"> <img src="img/youtube.svg" alt="Логотип Ютуба"></a>
+               </li>
+             </ul>
+           </section>
+           <p>
+             Website by
+             <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
+               <img src="img/logo-htmlacademy.svg" alt="Логотип-ссылка на сайт Htmlacademy" width="100" height="50"></a>
+             </p>
+           </footer>
+         </body>
+         </html>
