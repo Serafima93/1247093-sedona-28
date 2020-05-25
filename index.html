@@ -34,22 +34,41 @@
   <p>
     <b>Заинтересовались?</b>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиц в Седоне
   </p>
+
+
   <h2>Поиск гостиницы в Седоне </h2>
 
-  <form action="https://echo.htmlacademy.ru/courses" method="GET">
-    <label>Дата заезда:</label>
-    <input type="text" value="24 апреля 2017">
+  <form action="https://echo.htmlacademy.ru/courses" method="GET" oninput="daysoutput.value=dayscount.value">
+    <div>
+      <label for="appointment-date">Дата заезда:</label>
+      <input type="text" id="appointment-date" value="24 апреля 2017">
+      <img src="img/calendar.svg" alt="Календарь">
+    </div>
+    <div>
+    <label for="exitdate">Дата выезда:</label>
+    <input type="text" id="exitdate" value="4 июля 2017">
     <img src="img/calendar.svg" alt="Календарь">
-    <label>Дата выезда:</label>
-    <input type="text" value="4 июля 2017">
-    <img src="img/calendar.svg" alt="Календарь">
-    <p>Взрослые
-    </p>
-    <p>Дети
-    </p>
-    <button type="button">Найти
-      <!-- submit?-->
-    </button>
+  </div>
+
+    <!-- Я не нашла в наших уроках как сделать счетчик такого вида. По мне самое логичное чтобы здесь была функция- если кто-то нажимает на кнопку "плюс или минус" прибавляется число в форме -->
+    <div>
+      <label>Взрослые</label>
+    <input type="image" src="img/minus.svg" width="20" height="10" alt="Взрослых: увеличить количество">
+    <label for="dayscount"></label>
+    <input type="number" min="1" max="50" name="amount" id="dayscount" value="2">
+    <div>
+      <output name="daysoutput"></output>
+    </div>
+      <input type="image" src="img/plus.svg" width="20" height="10"  alt="Взрослых: уменьшить количество">
+  <div>
+    <label>Дети</label>
+    <input type="image" src="img/minus.svg" width="20" height="10" alt="Детей: увеличить количество">
+    <input type="number" min="1" max="50" id="amount" name="amount">
+    <input type="image" src="img/plus.svg" width="20" height="10" alt="Детей: уменьшить количество">
+  </div>
+  </div>
+
+    <button type="button" value="кнопка найти">Найти </button>
   </form>
 </article>
 </main>
