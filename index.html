@@ -3,18 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header>
+  <header class="main-header">
 
- <nav>
+ <nav class="main-navigation">
    <a>
      <img src="img/logo-sedona.svg" width="100" height="50" alt="Логотип путешествий по городу Седона - ведет на главную страницу»">
    </a>
-   <li><a href="#">Информация</a></li>
-   <li><a href="#">Фото и видео </a></li>
-   <li><a href="#">Карта Штата</a></li>
-   <li><a href="hotels.html">Гостиницы</a></li>
+   <ul class="site-navigation">
+     <li><a href="#">Информация</a></li>
+     <li><a href="#">Фото и видео </a></li>
+     <li><a href="#">Карта Штата</a></li>
+     <li><a href="hotels.html">Гостиницы</a></li>
+   </ul>
  </nav>
 </header>
 
@@ -23,16 +27,18 @@
   <h1 class="visually-hidden"> Путешествие в городе «Седона»</h1>
   <section>
     <img src="img/mainphoto.jpg" width="1200" height="509" alt="Фотография каньона в городе Седона">
-    <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+    <p class="tagline">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
   </section>
   <section>
-    <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </h2>
+    <!-- Я заменила заголовок второго уровня на параграф,иначе текс не центрировался. Если это не правильно, то уберу. Но почему так происходит?-->
+    <p class="reasons"> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </p>
+
     <!-- Здесь будет список с иконками-->
   </section>
 
 <article>
   <p>
-    <b>Заинтересовались?</b>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиц в Седоне
+    <b>Заинтересовались?</b><br>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиц в Седоне
   </p>
   <h2>Поиск гостиницы в Седоне </h2>
   <div>
@@ -59,20 +65,20 @@
     <input type="number" min="1" max="50" name="children" id="children" value="2">
     <button type="button"></button>
   </div>
-  <button type="submit">Найти </button>
+  <button type="submit" class="button">Найти </button>
 </form>
 </div>
 </article>
 </main>
 
-<footer>
+<footer class="main-footer">
   <section>
-    <p>#visitSEDONA
+    <h2 class="visually-hidden">Контакты</h2>
+    <p>#visitSEDONA<br>
       ТЕЛ: +7(495) 666-01
     </p>
   </section>
-  <section>
-    <h2>Контакты</h2>
+  <section class="footer-social">
     <ul>
       <li>
         <a href="https://twitter.com/" target="blank">

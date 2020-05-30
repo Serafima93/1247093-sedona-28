@@ -1,0 +1,111 @@
+:root {
+  --basic-blue: #81B3D2;
+  --basic-white: #FFFFFF;
+  --light-grey: #EEEEEE;
+  --basic-black: #000000;
+  --brown: #766357;
+  --neutral: #F2F2F2;
+  --grey-black: #333333;
+  --background:#888888;
+}
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: var(--background);
+  background-position: top center;
+  background-image: url("../img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-blue);
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-black);
+}
+
+/* User navigation */
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-blue);
+}
+.tagline {
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  background-color:var(--basic-white);
+
+}
+.reasons {
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  background-color:var(--basic-white);
+}
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+  width: 458px;
+  height: 58px;
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--basic-black);
+}
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--light-grey);
+}
+.main-footer {
+ color: var(--basic-black);
+ background-color: var(--basic-white);
+}
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
