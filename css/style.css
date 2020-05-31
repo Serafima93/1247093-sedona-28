@@ -6,7 +6,7 @@
   --brown: #766357;
   --neutral: #F2F2F2;
   --grey-black: #333333;
-  --background:#888888;
+  --background:#FFFFFF;
 }
 body {
   min-width: 960px;
@@ -48,18 +48,18 @@ img {
   background-color: var(--basic-black);
 }
 
-/* User navigation */
+/* site navigation */
 
 .site-navigation a,
 .user-navigation a {
   color: var(--basic-black);
 }
 .site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-navigation a:focus {
   background-color: var(--basic-blue);
 }
+
+/* Main-part */
 .tagline {
   text-align: center;
   font-size: 21px;
@@ -74,8 +74,51 @@ img {
   font-weight: normal;
   background-color:var(--basic-white);
 }
-/* Button */
+/* Почему-то не встает. В чем мб проблема? */
+.modal {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+/* Почему h2 нельзя отцентровать?*/
+.interes {
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  background-color:var(--basic-white);
 
+}
+.appointment-info {
+  font-weight: bold;
+  text-align: center;
+
+}
+
+/* Button */
+.button-search {
+ font: inherit;
+ width: 568px;
+ height: 86px;
+ background-color:var(--brown);
+ text-transform: uppercase;
+ text-align: center;
+ color:var(--basic-white);
+ font-weight: bold;
+ font-size: 21px;
+ line-height: 26px;
+ border: none;
+}
+.button-search:hover,
+.button-search:focus,
+.button-search:active {
+  background-color: var(--neutral);
+}
+.button-search.disabled,
+.button-search:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--black-grey);
+}
 .button {
   font: inherit;
   text-align: center;
@@ -86,21 +129,103 @@ img {
   border: none;
   width: 458px;
   height: 58px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
 }
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: var(--basic-black);
+  background-color: var(--neutral);
 }
 .button.disabled,
 .button:disabled {
   cursor: default;
   opacity: 0.5;
-  background-color: var(--light-grey);
+  background-color: var(--black-grey);
 }
+/* Appointment */
+.appointment-item input {
+  font: inherit;
+  background-color: var(--neutral);
+  width: 346px;
+  height: 38px;
+}
+
+.appointment-item input:focus {
+  border-color: var(--basic-white);
+}
+.children input {
+  width: 114px;
+  height: 38px
+}
+.adults input {
+  width: 114px;
+  height: 38px
+}
+/* hotels */
+.details {
+  font: inherit;
+  width: 110px;
+  height: 27px;
+  background-color:var(--basic-blue);
+  text-transform: uppercase;
+  text-align: center;
+  color:var(--basic-white);
+  font-weight: bold;
+  border: none
+}
+.booking {
+  font: inherit;
+  width: 142px;
+  height: 27px;
+  background-color:var(--brown);
+  text-transform: uppercase;
+  text-align: center;
+  color:var(--basic-white);
+  font-weight: bold;
+  border: none
+}
+.details:hover,
+.details:focus,
+.details:active {
+  background-color: var(--neutral);
+}
+.details.disabled,
+.details:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--black-grey);
+}
+.booking:hover,
+.booking:focus,
+.booking:active {
+  background-color: var(--neutral);
+}
+.booking.disabled,
+.booking:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--black-grey);
+}
+.ratio {
+  text-align: center;
+  width: 110px;
+  height: 27px;
+  background-color:var(--neutral);
+}
+
+/* Footer */
+
 .main-footer {
  color: var(--basic-black);
  background-color: var(--basic-white);
+}
+
+.footer-contacts {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px
 }
 .footer-social {
   text-align: center;
@@ -108,4 +233,16 @@ img {
 
 .footer-social ul {
   list-style: none;
+}
+/* Почему-то не работают кнопки. Мне кажется тут ошибка...*/
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-white);
+}
+
+.footer-copyright {
+ text-align: center;
+ font-weight: normal;
+ font-size: 14px;
+ line-height: 26px;
 }
