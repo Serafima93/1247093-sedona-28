@@ -15,14 +15,11 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-  line-height: 26px;
+  line-height: 1.5em;
   font-weight: 700;
   color: var(--basic-black);
   background-color: var(--background);
   background-position: top center;
-  background-image: url("../img/bg.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 a {
   text-decoration: none;
@@ -33,7 +30,6 @@ img {
 }
 .main-navigation {
   font-size: 14px;
-  line-height: 26px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -50,8 +46,7 @@ img {
 
 /* site navigation */
 
-.site-navigation a,
-.user-navigation a {
+.site-navigation a{
   color: var(--basic-black);
 }
 .site-navigation a:hover,
@@ -63,28 +58,26 @@ img {
 .tagline {
   text-align: center;
   font-size: 21px;
-  line-height: 26px;
   background-color:var(--basic-white);
 
 }
 .reasons {
   text-align: center;
   font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;
+  font-weight: 400;
   background-color:var(--basic-white);
 }
 /* Почему-то не встает. В чем мб проблема? */
 .modal {
   color: var(--basic-black);
   background-color: var(--basic-white);
+  border: 1px solid black;
 }
 /* Почему h2 нельзя отцентровать?*/
 .interes {
   text-align: center;
   font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;
+  font-weight: 400;
   background-color:var(--basic-white);
 
 }
@@ -105,7 +98,6 @@ img {
  color:var(--basic-white);
  font-weight: bold;
  font-size: 21px;
- line-height: 26px;
  border: none;
 }
 .button-search:hover,
@@ -131,7 +123,6 @@ img {
   height: 58px;
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px;
 }
 .button:hover,
 .button:focus,
@@ -159,7 +150,7 @@ img {
   width: 114px;
   height: 38px
 }
-.adults input {
+.adults input[type="button"] {
   width: 114px;
   height: 38px
 }
@@ -172,7 +163,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   color:var(--basic-white);
-  font-weight: bold;
+  font-weight: 700;
   border: none
 }
 .booking {
@@ -183,7 +174,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   color:var(--basic-white);
-  font-weight: bold;
+  font-weight: 700;
   border: none
 }
 .details:hover,
@@ -225,7 +216,6 @@ img {
 .footer-contacts {
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px
 }
 .footer-social {
   text-align: center;
@@ -242,7 +232,6 @@ img {
 
 .footer-copyright {
  text-align: center;
- font-weight: normal;
+ font-weight: 400;
  font-size: 14px;
- line-height: 26px;
 }
