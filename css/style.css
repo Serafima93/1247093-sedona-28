@@ -104,6 +104,7 @@ img {
 .button-search:focus,
 .button-search:active {
   background-color: var(--neutral);
+  cursor: pointer;
 }
 .button-search.disabled,
 .button-search:disabled {
@@ -127,7 +128,8 @@ img {
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: var(--neutral);
+ background-color: var(--neutral);
+ cursor: pointer;
 }
 .button.disabled,
 .button:disabled {
@@ -180,7 +182,8 @@ img {
 .details:hover,
 .details:focus,
 .details:active {
-  background-color: var(--neutral);
+background-color: var(--neutral);
+cursor: pointer;
 }
 .details.disabled,
 .details:disabled {
@@ -191,7 +194,8 @@ img {
 .booking:hover,
 .booking:focus,
 .booking:active {
-  background-color: var(--neutral);
+ background-color: var(--neutral);
+ cursor: pointer;
 }
 .booking.disabled,
 .booking:disabled {
@@ -216,6 +220,12 @@ img {
 .footer-contacts {
   font-weight: bold;
   font-size: 21px;
+  color: var(--basic-black);
+}
+a[href^="tel:"] {
+  color: var(--basic-black);
+  font-weight: 700;
+  font-size: 21px;
 }
 .footer-social {
   text-align: center;
@@ -225,13 +235,22 @@ img {
   list-style: none;
 }
 /* Почему-то не работают кнопки. Мне кажется тут ошибка...*/
-.social-button:hover,
-.social-button:focus {
-  background-color: var(--basic-white);
+a .social-button:hover,
+a .social-button:focus,
+a .social-button:active {
+  background-color:var(--basic-white);
 }
+
 
 .footer-copyright {
  text-align: center;
  font-weight: 400;
  font-size: 14px;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus,
+.footer-copyright a:active {
+background-color:var(--basic-blue);
+cursor: pointer;
 }
