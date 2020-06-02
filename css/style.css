@@ -83,10 +83,11 @@ img {
 
 }
 /* Почему h2 нельзя отцентровать? Поставила inline-block;. Все равно h2 не встает нормально...Мб я где-то еще ошиблась*/
-.interes {
+.Interes {
   text-align: center;
-  font-size: 14px;
-  font-weight: 400;
+  line-height: 24px;
+  font-size: 30px;
+  font-weight: 700;
   background-color:var(--basic-white);
   text-transform: uppercase;
   display: inline-block;
