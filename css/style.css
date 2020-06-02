@@ -74,14 +74,14 @@ img {
   text-transform: uppercase;
 
 }
-/* Почему-то не встает. В чем мб проблема? Заменила рамку, но она и не нужна вроде. Просто форма не отрисовывается красиво..*/
+
 .order {
   color: var(--basic-black);
   background-color: var(--basic-white);
   text-transform: uppercase;
   text-align: center;
+  display: inline-block;
 }
-
 
 .Interes {
   text-align: center;
@@ -90,8 +90,8 @@ img {
   font-weight: 700;
   background-color:var(--basic-white);
   text-transform: uppercase;
-  display: inline-block;
 }
+
 .formsearch {
   width: 568px;
   height: 395px;
