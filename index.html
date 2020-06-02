@@ -37,37 +37,38 @@
     <!-- Здесь будет список с иконками-->
   </section>
 
-<article сlass="modal">
-  <h2 class="Interes">Заинтересовались?</h2>
-  <p class="appointment-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиц в Седоне
-  </p>
-  <button type="button" id="button" class="button-search">Поиск гостиницы в Седоне </button>
-  <div>
-    <form class="appointment-form" action="https://echo.htmlacademy.ru/courses" method="post">
-      <div class="appointment-item">
-        <label for="enter"> Дата заезда:</label>
-        <input type="text" id="enter" value="24 апреля 2017">
-        <img src="img/calendar.svg" alt="Календарь">
-      </div>
-      <div class="appointment-item">
-        <label for="exit">Дата выезда:</label>
-        <input type="text" id="exit" value="4 июля 2017">
-        <img src="img/calendar.svg" alt="Календарь">
-      </div>
-      <div class="appointment-item adults">
-        <label for="adults">Взрослые  </label>
-        <button type="button"></button>
-        <input type="number" min="1" max="50" name="adults" id="adults" value="2">
-        <button type="button"></button>
-      </div>
-      <div class="appointment-item children">
-        <label for="children">Дети  </label>
-        <button type="button"></button>
-        <input type="number" min="1" max="50" name="children" id="children" value="2">
-        <button type="button"></button>
-      </div>
-      <button type="submit" class="button">Найти </button>
-    </form>
+<article сlass="order">
+    <h2 class="Interes">Заинтересовались?</h2>
+    <p class="appointment-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиц в Седоне</p>
+    <div class="formsearch">
+      <button type="button" id="button" class="button-search">Поиск гостиницы в Седоне </button>
+    <div>
+      <form class="appointment-form" action="https://echo.htmlacademy.ru/courses" method="post">
+        <div class="appointment-item">
+          <label for="enter"> Дата заезда:</label>
+          <input type="text" id="enter" value="24 апреля 2017">
+          <img src="img/calendar.svg" alt="Календарь">
+        </div>
+        <div class="appointment-item">
+          <label for="exit">Дата выезда:</label>
+          <input type="text" id="exit" value="4 июля 2017">
+          <img src="img/calendar.svg" alt="Календарь">
+        </div>
+        <div class="appointment-item adults">
+          <label for="adults">Взрослые  </label>
+          <button type="button"></button>
+          <input type="number" min="1" max="50" name="adults" id="adults" value="2">
+          <button type="button"></button>
+        </div>
+        <div class="appointment-item children">
+          <label for="children">Дети  </label>
+          <button type="button"></button>
+          <input type="number" min="1" max="50" name="children" id="children" value="2">
+          <button type="button"></button>
+        </div>
+        <button type="submit" class="button">Найти </button>
+      </form>
+    </div>
   </div>
 </article>
 </main>

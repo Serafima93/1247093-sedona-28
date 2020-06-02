@@ -75,14 +75,14 @@ img {
 
 }
 /* Почему-то не встает. В чем мб проблема? Заменила рамку, но она и не нужна вроде. Просто форма не отрисовывается красиво..*/
-.modal {
+.order {
   color: var(--basic-black);
   background-color: var(--basic-white);
-  outline: 1px solid;
   text-transform: uppercase;
-
+  text-align: center;
 }
-/* Почему h2 нельзя отцентровать? Поставила inline-block;. Все равно h2 не встает нормально...Мб я где-то еще ошиблась*/
+
+
 .Interes {
   text-align: center;
   line-height: 24px;
@@ -91,15 +91,21 @@ img {
   background-color:var(--basic-white);
   text-transform: uppercase;
   display: inline-block;
-
+}
+.formsearch {
+  width: 568px;
+  height: 395px;
+  background-color:var(--basic-white);
+  text-transform: uppercase;
+  color: var(--basic-black);
+  border: 1px solid red;
 
 }
+
 .appointment-info {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-
-
 }
 
 /* Button */
