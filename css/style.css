@@ -14,8 +14,7 @@ body {
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  text-transform: uppercase;
-  line-height: 1.5em;
+  line-height: 1.5;
   font-weight: 700;
   color: var(--basic-black);
   background-color: var(--background);
@@ -32,6 +31,8 @@ img {
   font-size: 14px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  text-transform: uppercase;
+
 }
 
 .main-navigation-wrapper {
@@ -48,6 +49,8 @@ img {
 
 .site-navigation a{
   color: var(--basic-black);
+  text-transform: uppercase;
+
 }
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -59,6 +62,8 @@ img {
   text-align: center;
   font-size: 21px;
   background-color:var(--basic-white);
+  text-transform: uppercase;
+
 
 }
 .reasons {
@@ -66,24 +71,33 @@ img {
   font-size: 14px;
   font-weight: 400;
   background-color:var(--basic-white);
+  text-transform: uppercase;
+
 }
-/* Почему-то не встает. В чем мб проблема? */
+/* Почему-то не встает. В чем мб проблема? Заменила рамку, но она и не нужна вроде. Просто форма не отрисовывается красиво..*/
 .modal {
   color: var(--basic-black);
   background-color: var(--basic-white);
-  border: 1px solid black;
+  outline: 1px solid;
+  text-transform: uppercase;
+
 }
-/* Почему h2 нельзя отцентровать?*/
+/* Почему h2 нельзя отцентровать? Поставила inline-block;. Все равно h2 не встает нормально...Мб я где-то еще ошиблась*/
 .interes {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
   background-color:var(--basic-white);
+  text-transform: uppercase;
+  display: inline-block;
+
 
 }
 .appointment-info {
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
+
 
 }
 
@@ -93,12 +107,13 @@ img {
  width: 568px;
  height: 86px;
  background-color:var(--brown);
- text-transform: uppercase;
  text-align: center;
  color:var(--basic-white);
  font-weight: bold;
  font-size: 21px;
  border: none;
+ text-transform: uppercase;
+
 }
 .button-search:hover,
 .button-search:focus,
@@ -112,6 +127,9 @@ img {
   opacity: 0.5;
   background-color: var(--black-grey);
 }
+
+/* Заменила на   min-width: 458px.Вы это имели ввиду? */
+
 .button {
   font: inherit;
   text-align: center;
@@ -120,7 +138,7 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-blue);
   border: none;
-  width: 458px;
+  min-width: 458px;
   height: 58px;
   font-weight: bold;
   font-size: 21px;
@@ -143,21 +161,35 @@ img {
   background-color: var(--neutral);
   width: 346px;
   height: 38px;
+  text-transform: uppercase;
+
 }
 
 .appointment-item input:focus {
   border-color: var(--basic-white);
 }
-.children input {
+
+/* Здесь нужны пояснения. Потому что макет какой-то странный. И вообще с кнопками я тут запуталась немного. Как мы оформляем +-. Это картинки? */
+
+.children {
   width: 114px;
-  height: 38px
 }
-.adults input[type="button"] {
-  width: 114px;
+.children input {
+  width: 100%;
   height: 38px
+  text-transform: uppercase;
+}
+.adults {
+  width: 114px;
+}
+.adults input {
+  width: 100%;
+  height: 38px
+  text-transform: uppercase;
+
 }
 /* hotels */
-.details {
+.details-hotels {
   font: inherit;
   width: 110px;
   height: 27px;
@@ -168,7 +200,7 @@ img {
   font-weight: 700;
   border: none
 }
-.booking {
+.booking-apartments {
   font: inherit;
   width: 142px;
   height: 27px;
@@ -179,26 +211,26 @@ img {
   font-weight: 700;
   border: none
 }
-.details:hover,
-.details:focus,
-.details:active {
+.details-hotel:hover,
+.details-hotel:focus,
+.details-hotel:active {
 background-color: var(--neutral);
 cursor: pointer;
 }
-.details.disabled,
-.details:disabled {
+.details-hotel.disabled,
+.details-hotel:disabled {
   cursor: default;
   opacity: 0.5;
   background-color: var(--black-grey);
 }
-.booking:hover,
-.booking:focus,
-.booking:active {
+.booking-apartments:hover,
+.booking-apartments:focus,
+.booking-apartments:active {
  background-color: var(--neutral);
  cursor: pointer;
 }
-.booking.disabled,
-.booking:disabled {
+.booking-apartments.disabled,
+.booking-apartments:disabled {
   cursor: default;
   opacity: 0.5;
   background-color: var(--black-grey);
@@ -208,6 +240,8 @@ cursor: pointer;
   width: 110px;
   height: 27px;
   background-color:var(--neutral);
+  text-transform: uppercase;
+
 }
 
 /* Footer */
@@ -221,11 +255,15 @@ cursor: pointer;
   font-weight: bold;
   font-size: 21px;
   color: var(--basic-black);
+  text-transform: uppercase;
+
 }
 a[href^="tel:"] {
   color: var(--basic-black);
   font-weight: 700;
   font-size: 21px;
+  text-transform: uppercase;
+
 }
 .footer-social {
   text-align: center;
@@ -246,6 +284,8 @@ a .social-button:active {
  text-align: center;
  font-weight: 400;
  font-size: 14px;
+ text-transform: uppercase;
+
 }
 
 .footer-copyright a:hover,
