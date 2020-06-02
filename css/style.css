@@ -81,6 +81,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
+  position: relative;
 }
 
 .Interes {
@@ -99,6 +100,10 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
   border: 1px solid red;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
 
 }
 
