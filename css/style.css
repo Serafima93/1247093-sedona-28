@@ -27,25 +27,58 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/* Main header */
+
+.main-header {
+  margin-bottom: 70px;
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+/* Main navigation */
+
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 14px;
   color: var(--basic-black);
   background-color: var(--basic-white);
   text-transform: uppercase;
-
 }
 
 .main-navigation-wrapper {
-  background-color: var(--basic-blue);
+  width: 100%;
+  background-color: var(--basic-white);
+  display: flex;
 }
+
+/* site navigation */
 .site-navigation {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 58px;
   list-style: none;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+
 }
 .site-navigation-current a:not([href]) {
   background-color: var(--basic-black);
 }
-
-/* site navigation */
 
 .site-navigation a{
   color: var(--basic-black);
@@ -57,14 +90,24 @@ img {
   background-color: var(--basic-blue);
 }
 
+
+
+/* Logo */
+
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+
 /* Main-part */
 .tagline {
   text-align: center;
   font-size: 21px;
   background-color:var(--basic-white);
   text-transform: uppercase;
-
-
 }
 .reasons {
   text-align: center;
@@ -72,18 +115,15 @@ img {
   font-weight: 400;
   background-color:var(--basic-white);
   text-transform: uppercase;
-
 }
-
 .order {
   color: var(--basic-black);
   background-color: var(--basic-white);
   text-transform: uppercase;
   text-align: center;
-  display: inline-block;
-  position: relative;
+/*  display: inline-block;
+  position: relative;*/
 }
-
 .Interes {
   text-align: center;
   line-height: 24px;
@@ -99,11 +139,12 @@ img {
   background-color:var(--basic-white);
   text-transform: uppercase;
   color: var(--basic-black);
-  border: 1px solid red;
-  position: absolute;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+  /*position: absolute;
   margin: auto;
   left: 0;
-  right: 0;
+  right: 0;*/
 
 }
 
@@ -201,6 +242,13 @@ img {
 
 }
 /* hotels */
+.reservation {
+  display: grid;
+}
+
+.hotel1{
+  display: grid;
+}
 .details-hotels {
   font: inherit;
   width: 110px;
@@ -253,21 +301,31 @@ cursor: pointer;
   height: 27px;
   background-color:var(--neutral);
   text-transform: uppercase;
-
 }
 
 /* Footer */
 
 .main-footer {
+ padding: 36px 0;
+ margin-top: 36px;
  color: var(--basic-black);
  background-color: var(--basic-white);
+ outline: 5px solid rgba(255, 0, 0, 0.7);
+ outline-offset: -5px;
 }
-
+.main-footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .footer-contacts {
-  font-weight: bold;
+  margin: 0;
+  width: 320px;
+  font-weight: 700;
   font-size: 21px;
   color: var(--basic-black);
   text-transform: uppercase;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
 
 }
 a[href^="tel:"] {
@@ -278,7 +336,11 @@ a[href^="tel:"] {
 
 }
 .footer-social {
+  width: 145px;
+  justify-self: center;
   text-align: center;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
 }
 
 .footer-social ul {
@@ -288,15 +350,20 @@ a[href^="tel:"] {
 a .social-button:hover,
 a .social-button:focus,
 a .social-button:active {
-  background-color:var(--basic-white);
+  background-color:var(--basic-black);
 }
 
 
 .footer-copyright {
+ max-width: 1000px;
+ margin: 0;
+ justify-self: end;
  text-align: center;
  font-weight: 400;
  font-size: 14px;
  text-transform: uppercase;
+ outline: 5px solid rgba(255, 0, 255, 0.7);
+ outline-offset: -5px;
 
 }
 
