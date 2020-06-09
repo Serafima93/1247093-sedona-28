@@ -246,6 +246,7 @@ img {
 
 .reservation {
 display: flex;
+flex-direction: column;
 }
 .hotel-first {
   /* Почему-то у меня не выходит управлять элементами внтури этих класов*/
