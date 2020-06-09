@@ -19,7 +19,6 @@ body {
   color: var(--basic-black);
   background-color: var(--background);
   background-position: top center;
-  text-transform: uppercase;
 
 }
 a {
@@ -125,7 +124,7 @@ img {
   text-align: center;
 
 }
-.Interes {
+.interes {
   text-align: center;
   line-height: 24px;
   font-size: 30px;
@@ -246,17 +245,16 @@ img {
 
 
 .reservation {
-display: grid;
-grid-template-rows: auto auto auto;
+display: flex;
 }
-.hotel1 {
+.hotel-first {
   /* Почему-то у меня не выходит управлять элементами внтури этих класов*/
 
 }
 
-.hotel1,
-.hotel2,
-.hotel3 {
+.hotel-first,
+.hotel-second,
+.hotel-third {
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
 }
