@@ -4,44 +4,42 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
+  <div class="container">
   <header class="main-header">
 
  <nav class="main-navigation">
    <a class="main-header-logo">
-     <img src="img/logo-sedona.svg" width="100" height="50" alt="Логотип путешествий по городу Седона - ведет на главную страницу.">
+     <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип путешествий по городу Седона - ведет на главную страницу.">
    </a>
-   <div class="main-navigation-wrapper">
-       <ul class="site-navigation">
+       <ul class="site-navigation first-part">
          <li><a href="#">Информация</a></li>
          <li><a href="#">Фото и видео </a></li>
+         </ul>
+          <ul class="site-navigation second-part">
          <li><a href="#">Карта Штата</a></li>
          <li><a href="hotels.html">Гостиницы</a></li>
        </ul>
-     </div>
  </nav>
 </header>
 
 
 <main>
   <h1 class="visually-hidden"> Путешествие в городе «Седона»</h1>
-  <section>
+  <section class="text-center">
     <img src="img/mainphoto.jpg" width="1200" height="509" alt="Фотография каньона в городе Седона.Welcome to the gorgeous. Sedona - Because the Grand Canyon sucks!">
     <p class="tagline">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
-  </section>
-  <section>
-    <!-- Я заменила заголовок второго уровня на параграф,иначе текс не центрировался. Если это не правильно, то уберу. Но почему так происходит?-->
     <p class="reasons"> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </p>
 
     <!-- Здесь будет список с иконками-->
   </section>
 
-<article сlass="order">
-    <h2 class="Interes">Заинтересовались?</h2>
+<article class="order text-center">
+    <h2 class="interes">Заинтересовались?</h2>
     <p class="appointment-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиц в Седоне</p>
       <button type="button" id="button" class="button-search">Поиск гостиницы в Седоне </button>
       <div class="formsearch">
@@ -77,7 +75,7 @@
   </main>
 
 <footer class="page-footer main-footer">
-  <div class="container">
+  <div class="company-information">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <p>#visitSEDONA<br>
@@ -97,7 +95,8 @@
         </a>
       </li>
       <li>
-        <a class="social-button" href="https://www.youtube.com/" target="blank"> <img src="img/youtube.svg" alt="Логотип Ютуба">
+        <a class="social-button" href="https://www.youtube.com/" target="blank">
+           <img src="img/youtube.svg" alt="Логотип Ютуба">
         </a>
       </li>
     </ul>
@@ -110,5 +109,6 @@
     </p>
   </div>
 </footer>
+</div>
 </body>
 </html>
