@@ -38,6 +38,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .page {
   height: 100%;
@@ -77,6 +91,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -157,7 +172,6 @@ img {
 
 .appointment-info {
   font-weight: bold;
-
   text-transform: uppercase;
 }
 
@@ -167,7 +181,6 @@ img {
  width: 568px;
  height: 86px;
  background-color:var(--brown);
-
  color:var(--basic-white);
  font-weight: bold;
  font-size: 21px;
@@ -189,11 +202,9 @@ img {
   background-color: var(--black-grey);
 }
 
-/* Заменила на   min-width: 458px.Вы это имели ввиду? */
 
 .button {
   font: inherit;
-
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
@@ -223,7 +234,6 @@ img {
   width: 346px;
   height: 38px;
   text-transform: uppercase;
-
 }
 
 .appointment-item input:focus {
@@ -250,7 +260,6 @@ img {
 }
 /* hotels */
 
-
 .reservation {
 display: flex;
 flex-direction: column;
@@ -266,7 +275,6 @@ text-transform: uppercase;
   width: 1200px;
   height: 150px;
   position: relative;
-
 }
 /*.hotel-picture{
   position: absolute;
@@ -405,6 +413,10 @@ justify-content: center;
  .social-button:focus,
  .social-button:active {
   background-color:var(--basic-black);
+}
+.social-button:hover path,
+.social-button:focus path {
+  fill: var(--basic-white);
 }
 
 
