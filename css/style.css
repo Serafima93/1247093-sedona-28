@@ -8,6 +8,12 @@
   --grey-black: #333333;
   --background:#FFFFFF;
   --blue-grey:#E5E5E5;
+  --blue-hover:#669EC0;
+  --blue-push:#5496BD;
+  --light-brown:#BDBBBC;
+  --milk-chocolate:#604E43;
+  --dark-chocolate:#503E33;
+  --neutral-hover:#EBEBEB;
 }
 body {
   min-width: 960px;
@@ -182,51 +188,30 @@ input[type="radio"].visually-hidden {
  height: 86px;
  background-color:var(--brown);
  color:var(--basic-white);
- font-weight: bold;
+ font-weight: 700;
  font-size: 21px;
  border: none;
  text-transform: uppercase;
  display: inline-block;
-
 }
 .button-search:hover,
-.button-search:focus,
+.button-search:focus{
+  background-color: var(--milk-chocolate);
+  cursor: pointer;
+}
 .button-search:active {
-  background-color: var(--neutral);
+  background-color: var(--dark-chocolate);
   cursor: pointer;
 }
 .button-search.disabled,
 .button-search:disabled {
   cursor: default;
   opacity: 0.5;
-  background-color: var(--black-grey);
+  background-color: var(--dark-chocolate);
 }
 
 
-.button {
-  font: inherit;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--basic-blue);
-  border: none;
-  min-width: 458px;
-  height: 58px;
-  font-weight: bold;
-  font-size: 21px;
-}
-.button:hover,
-.button:focus,
-.button:active {
- background-color: var(--neutral);
- cursor: pointer;
-}
-.button.disabled,
-.button:disabled {
-  cursor: default;
-  opacity: 0.5;
-  background-color: var(--black-grey);
-}
+
 /* Appointment */
 .appointment-item input {
   font: inherit;
@@ -236,11 +221,17 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.appointment-item input:hover {
+  background-color:var(--neutral-hover);
+}
 .appointment-item input:focus {
-  border-color: var(--basic-white);
+  border: 2px solid var(--blue-grey);
+  background-color:var(--basic-white);
+
 }
 
-/* Здесь нужны пояснения. Потому что макет какой-то странный. И вообще с кнопками я тут запуталась немного. Как мы оформляем +-. Это картинки? */
+
+
 
 .children {
   width: 114px;
@@ -356,8 +347,108 @@ cursor: pointer;
   height: 27px;
   background-color:var(--neutral);
   text-transform: uppercase;
-
 }
+
+
+.calendar{
+  width: 21px;
+  height: 23px;
+  background-color: var(--basic-white);
+}
+
+.calendar:hover,
+.social-button:focus {
+ background-color:var(--basic-white);
+}
+.calendar:hover path,
+.social-button:focus path {
+ fill: var(--basic-black);
+ cursor: pointer;
+}
+
+.calendar:active {
+ fill: var(--basic-white);
+ cursor: pointer;
+}
+.calendar:active path {
+ fill: var(--basic-blue);
+}
+
+/*Тут нужна помощь. Картинка не встает из графики. Почему? И почему позиш абсолют в одном случае работает, а в другом нет*/
+ }
+.minus::before{
+  content: "";
+  position: absolute;
+  background-image: url("img/minus.svg");
+  width: 11px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: red;
+}
+.minus:hover::before,
+.minus:focus::before{
+  background-color:var(--basic-black);
+  cursor: pointer;
+}
+.minus:active::before {
+  background-color:var(--basic-blue);
+  cursor: pointer;
+}
+
+
+.plus::before{
+  content: "";
+  position: absolute;
+  background-image: url("img/plus.svg");
+  width: 11px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: blue;
+}
+.plus:hover::before,
+.minus:focus::before{
+  background-color:var(--basic-black);
+  cursor: pointer;
+}
+.plus:active::before {
+  background-color:var(--basic-blue);
+  cursor: pointer;
+}
+
+
+.button {
+  font: inherit;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+  min-width: 458px;
+  height: 58px;
+  font-weight: 700;
+  font-size: 21px;
+}
+.button:hover,
+.button:focus {
+ background-color: var(--blue-hover);
+ cursor: pointer;
+}
+
+.button:active {
+ background-color: var(--blue-push);
+ cursor: pointer;
+}
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--blue-push);
+}
+
+
+
 
 /* Footer */
 
@@ -407,33 +498,47 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
+color: inherit;
+width: 46px;
+height: 48px;
+background-color: var(--basic-blue);
 }
-/* Почему-то не работают кнопки. Мне кажется тут ошибка...*/
+
  .social-button:hover,
- .social-button:focus,
- .social-button:active {
-  background-color:var(--basic-black);
+ .social-button:focus {
+  background-color:var(--blue-hover);
 }
 .social-button:hover path,
 .social-button:focus path {
   fill: var(--basic-white);
 }
 
+.social-button:active {
+  fill: var(--blue-push);
+  opacity: 0.3;
+}
+.social-button:active path {
+  fill: var(--basic-white);
+  opacity: 0.3;
+}
 
 .footer-copyright {
- max-width: 1150px;
+ width: 115px;
+ height: 41px;
  margin: 0;
  font-weight: 400;
  font-size: 14px;
  text-transform: uppercase;
  outline: 5px solid rgba(255, 0, 255, 0.7);
  outline-offset: -5px;
-
 }
 
 .footer-copyright a:hover,
-.footer-copyright a:focus,
-.footer-copyright a:active {
+.footer-copyright a:focus {
 background-color:var(--basic-blue);
 cursor: pointer;
+}
+.footer-copyright a:active {
+  background-color:var(--light-brown);
+  cursor: pointer;
 }
