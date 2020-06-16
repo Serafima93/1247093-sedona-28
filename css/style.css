@@ -81,9 +81,6 @@ input[type="radio"].visually-hidden {
 /* Main navigation*/
 
 .main-navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   font-size: 14px;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -106,12 +103,7 @@ input[type="radio"].visually-hidden {
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
 }
-.first-part{
-  order:0;
-}
-.second-part{
-  order:2;
-}
+
 .site-navigation-current a:not([href]) {
   background-color: var(--basic-black);
 }
@@ -131,12 +123,13 @@ input[type="radio"].visually-hidden {
 /* Logo */
 
 .main-header-logo {
-  width: 238px;
+  width: 138px;
   height: 70px;
   outline: 5px solid rgba(255, 0, 0, 0.3);
   outline-offset: -5px;
-  order:1;
-
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
