@@ -200,7 +200,6 @@ input[type="radio"].visually-hidden {
   margin: auto;
 
 }
-
 .appointment-info {
   font-weight: bold;
   text-transform: uppercase;
@@ -223,11 +222,7 @@ input[type="radio"].visually-hidden {
 .appointment-item input:focus {
   border: 2px solid var(--blue-grey);
   background-color:var(--basic-white);
-
 }
-
-
-
 
 .children {
   width: 114px;
@@ -245,7 +240,10 @@ input[type="radio"].visually-hidden {
   height: 38px
   text-transform: uppercase;
 }
+
+
 /* hotels */
+
 
 .reservation {
 border-bottom: 1px solid var(--blue-grey);
@@ -263,16 +261,7 @@ text-transform: uppercase;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/*.hotel-picture{
-  position: absolute;
-  bottom:30px;
-  left: 73px;
-}*/
-/*.hotel-name{
-position: absolute;
-  bottom:35px;
-  left: 230px;
-}*/
+
 .hotel-information{
   width: 100%;
   display: flex;
@@ -284,7 +273,20 @@ font-style: normal;
 font-weight: 700;
 font-size: 21px;
 line-height: 26px
+color:var(--basic-black);
 }
+.hotel-link:hover,
+.hotel-link:focus {
+color: var(--basic-blue);
+cursor: pointer;
+}
+.hotel-link:active {
+ color: var(--basic-black);
+ cursor: pointer;
+ opacity: 0.3;
+}
+
+
 .hotel-rating {
   display: flex;
   flex-direction: column;
@@ -302,6 +304,16 @@ line-height: 26px
   font-weight: 700;
   border: none
 }
+.details-hotels:hover,
+.details-hotels:focus {
+background-color: var(--blue-hover);
+cursor: pointer;
+}
+
+ .details-hotels:active {
+  background-color: var(--blue-push);
+  cursor: pointer;
+}
 
 .booking-apartments {
   font: inherit;
@@ -309,42 +321,29 @@ line-height: 26px
   height: 27px;
   background-color:var(--brown);
   text-transform: uppercase;
-
   color:var(--basic-white);
   font-weight: 700;
   border: none
 }
-.details-hotel:hover,
-.details-hotel:focus,
-.details-hotel:active {
-background-color: var(--neutral);
-cursor: pointer;
-}
-.details-hotel.disabled,
-.details-hotel:disabled {
-  cursor: default;
-  opacity: 0.5;
-  background-color: var(--black-grey);
-}
 .booking-apartments:hover,
-.booking-apartments:focus,
-.booking-apartments:active {
- background-color: var(--neutral);
+.booking-apartments:focus {
+ background-color: var(--milk-chocolate);
  cursor: pointer;
 }
-.booking-apartments.disabled,
-.booking-apartments:disabled {
-  cursor: default;
-  opacity: 0.5;
-  background-color: var(--black-grey);
+
+.booking-apartments:active {
+  background-color: var(--dark-chocolate);
+  cursor: pointer;
 }
+
+
+
 .ratio {
   width: 110px;
   height: 27px;
   background-color:var(--neutral);
   text-transform: uppercase;
 }
-
 
 .calendar{
   width: 21px;
@@ -396,7 +395,7 @@ cursor: pointer;
 .plus::before{
   content: "";
   position: absolute;
-  background-image: url("img/plus.svg");
+  background-image: url("plus.svg/img");
   width: 11px;
   height: 11px;
   background-repeat: no-repeat;
