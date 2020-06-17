@@ -41,7 +41,6 @@
     <p class="appointment-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиц в Седоне</p>
       <button type="button" id="button" class="button-search">Поиск гостиницы в Седоне </button>
       <div class="formsearch">
-        <div>
           <form class="appointment-form" action="https://echo.htmlacademy.ru/courses" method="post">
             <div class="appointment-item">
               <label for="enter"> Дата заезда:</label>
@@ -55,21 +54,23 @@
               <svg class="calendar" width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z" fill="#A9A9A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z" fill="#A9A9A9"/>
               </svg>
             </div>
+
             <div class="appointment-item adults">
               <label for="adults">Взрослые  </label>
               <button type="button" class="minus"></button>
               <input type="number" min="1" max="50" name="adults" id="adults" value="2">
               <button type="button" class="plus"></button>
             </div>
+
             <div class="appointment-item children">
               <label for="children">Дети  </label>
               <button type="button" class="minus"></button>
               <input type="number" min="1" max="50" name="children" id="children" value="2">
               <button type="button" class="plus"></button>
             </div>
+
             <button type="submit" class="button">Найти </button>
           </form>
-        </div>
       </div>
     </article>
   </main>
@@ -86,19 +87,19 @@
         <ul>
           <li>
             <a class="social-button" href="http://www.facebook.com" target="blank">
-              <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29 17v-4h-4c-2.2091 0-4 1.7909-4 4v4h-4v4h4v10h4V25h4v-4h-4v-4h4z" fill="#fff"/>
+              <svg width="46" height="48" fill="none" aria-label="Фейсбук" xmlns="http://www.w3.org/2000/svg"><path d="M29 17v-4h-4c-2.2091 0-4 1.7909-4 4v4h-4v4h4v10h4V25h4v-4h-4v-4h4z" fill="#fff"/>
               </svg>
            </a>
         </li>
         <li>
           <a class="social-button" href="https://twitter.com" target="blank">
-            <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.3059 17.144c1.5859-.496 2.8085.27 3.3666 1.179.6334-.231 1.2527-.481 1.8927-.708-.0123.6864-.3071 1.3325-.8066 1.768.6447.17 1.2273-.491 1.2273-.491-.159 1-.9468 1.788-1.471 2.024-.2175 6.75-2.9883 11.217-9.4843 11.082h-.4197c-.3859 0-3.9191-.46-4.6099-1.887 2.1374.196 3.664-.422 4.4169-1.177-.9035-.3-2.5214-.477-2.8037-2.95.3284.106.5308.228 1.12.119-1.1295-.856-2.3822-1.573-2.3125-3.773.2682.328 1.0042.536 1.2612.472-.6617-.241-1.8542-3.36-.8415-4.952 1.7111 1.854 3.5153 3.606 6.7313 3.773.1958-2.293 1.0702-3.83 2.7332-4.479z" fill="#fff"/>
+            <svg width="46" height="48" fill="none" aria-label="Твиттер" xmlns="http://www.w3.org/2000/svg"><path d="M25.3059 17.144c1.5859-.496 2.8085.27 3.3666 1.179.6334-.231 1.2527-.481 1.8927-.708-.0123.6864-.3071 1.3325-.8066 1.768.6447.17 1.2273-.491 1.2273-.491-.159 1-.9468 1.788-1.471 2.024-.2175 6.75-2.9883 11.217-9.4843 11.082h-.4197c-.3859 0-3.9191-.46-4.6099-1.887 2.1374.196 3.664-.422 4.4169-1.177-.9035-.3-2.5214-.477-2.8037-2.95.3284.106.5308.228 1.12.119-1.1295-.856-2.3822-1.573-2.3125-3.773.2682.328 1.0042.536 1.2612.472-.6617-.241-1.8542-3.36-.8415-4.952 1.7111 1.854 3.5153 3.606 6.7313 3.773.1958-2.293 1.0702-3.83 2.7332-4.479z" fill="#fff"/>
           </svg>
           </a>
         </li>
         <li>
           <a class="social-button" href="https://www.youtube.com/" target="blank">
-          <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 16h14c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H16c-1.65 0-3-1.35-3-3V19c0-1.65 1.35-3 3-3zm3.027 4.002v7.996L28.014 24l-8.987-3.998z" fill="#fff"/>
+          <svg width="46" height="48" fill="none" aria-label="Ютуб" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 16h14c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H16c-1.65 0-3-1.35-3-3V19c0-1.65 1.35-3 3-3zm3.027 4.002v7.996L28.014 24l-8.987-3.998z" fill="#fff"/>
           </svg>
           </a>
         </li>

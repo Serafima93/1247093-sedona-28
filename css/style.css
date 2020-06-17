@@ -157,23 +157,6 @@ input[type="radio"].visually-hidden {
   background-color:var(--basic-white);
   text-transform: uppercase;
 }
-
-.formsearch {
-  width: 568px;
-  height: 395px;
-  background-color:var(--basic-white);
-  text-transform: uppercase;
-  color: var(--basic-black);
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
-  margin: auto;
-}
-
-.appointment-info {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 /* Button */
 .button-search {
  font: inherit;
@@ -201,6 +184,26 @@ input[type="radio"].visually-hidden {
   cursor: default;
   opacity: 0.5;
   background-color: var(--dark-chocolate);
+}
+
+.formsearch {
+  display: flex;
+  flex-grow: wrap;
+  justify-content:space-around;
+  width: 568px;
+  height: 395px;
+  background-color:var(--basic-white);
+  text-transform: uppercase;
+  color: var(--basic-black);
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+  margin: auto;
+
+}
+
+.appointment-info {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 
@@ -245,8 +248,6 @@ input[type="radio"].visually-hidden {
 /* hotels */
 
 .reservation {
-display: flex;
-flex-direction: column;
 border-bottom: 1px solid var(--blue-grey);
 text-transform: uppercase;
 }
@@ -256,9 +257,11 @@ text-transform: uppercase;
   outline-offset: -5px;
   display: flex;
   flex-direction: row;
-  width: 1200px;
-  height: 150px;
   position: relative;
+  padding-left:73px;
+  padding-right: 71px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /*.hotel-picture{
   position: absolute;
@@ -446,7 +449,7 @@ cursor: pointer;
 /* Footer */
 
 .main-footer {
- padding: 36px 0;
+ padding: 37px 0px;
  margin-top: 36px;
  color: var(--basic-black);
  background-color: var(--basic-white);
