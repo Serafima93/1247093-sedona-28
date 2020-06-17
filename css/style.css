@@ -76,8 +76,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   margin-bottom: 70px;
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
+
 }
 
 /* Main navigation*/
@@ -102,8 +101,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   min-height: 58px;
   list-style: none;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .site-navigation-current a:not([href]) {
@@ -112,6 +109,9 @@ input[type="radio"].visually-hidden {
 .site-navigation a{
   color: var(--basic-black);
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .site-navigation a:hover,
@@ -132,8 +132,6 @@ input[type="radio"].visually-hidden {
 .main-header-logo {
   width: 138px;
   height: 70px;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -146,6 +144,17 @@ input[type="radio"].visually-hidden {
   background-color:var(--basic-white);
   text-transform: uppercase;
 }
+.background{
+  margin-top: -70px;
+}
+
+.background::after{
+  content: " ";
+  background-image: url("../img/pices.png");
+  width: 100%;
+  height: 57px;
+}
+
 .reasons {
   font-size: 14px;
   font-weight: 400;
@@ -277,6 +286,10 @@ text-transform: uppercase;
   display: flex;
   justify-content: space-between;
 }
+.hotel-picture {
+  padding-right: 29px;
+  padding-bottom: 0px;
+}
 
 .hotel-link {
 font-style: normal;
@@ -319,6 +332,7 @@ cursor: pointer;
   text-transform: uppercase;
   color:var(--basic-white);
   font-weight: 700;
+  font-style: normal;
   border: none
 }
 .details-hotels:hover,
@@ -340,6 +354,7 @@ cursor: pointer;
   text-transform: uppercase;
   color:var(--basic-white);
   font-weight: 700;
+  font-style: normal;
   border: none
 }
 .booking-apartments:hover,
@@ -356,8 +371,6 @@ cursor: pointer;
 
 
 .ratio {
- width: 110px;
- height: 27px;
  background-color:var(--neutral);
  text-transform: uppercase;
  color:var(--brown-grey);
@@ -366,6 +379,10 @@ cursor: pointer;
  font-size: 14px;
  line-height: 21px;
  text-align: center;
+ padding-bottom: 3px;
+ padding-left:15px;
+ padding-right:12px;
+ padding-top:3px;
 }
 
 .calendar{
@@ -392,17 +409,15 @@ cursor: pointer;
  fill: var(--basic-blue);
 }
 
-/*Тут нужна помощь. Картинка не встает из графики. Почему? И почему позиш абсолют в одном случае работает, а в другом нет*/
- }
+
 .minus::before{
   content: "";
   position: absolute;
-  background-image: url("img/minus.svg");
+  background-image: url("../img/minus.svg");
   width: 11px;
   height: 11px;
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: red;
 }
 .minus:hover::before,
 .minus:focus::before{
@@ -414,26 +429,28 @@ cursor: pointer;
   cursor: pointer;
 }
 
-
 .plus::before{
-  content: "";
+  content: " ";
   position: absolute;
-  background-image: url("plus.svg/img");
+  background-image: url("../img/plus.svg");
   width: 11px;
   height: 11px;
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: blue;
 }
 .plus:hover::before,
 .minus:focus::before{
   background-color:var(--basic-black);
   cursor: pointer;
 }
+
 .plus:active::before {
   background-color:var(--basic-blue);
   cursor: pointer;
 }
+
+
+
 
 
 .button {
