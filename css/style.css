@@ -214,9 +214,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-grow: wrap;
   justify-content:space-around;
-
-  padding-left: 55px;
-  padding-right: 55px;
   padding-top: 55px;
   padding-bottom: 61px;
   background-color:var(--basic-white);
@@ -240,6 +237,8 @@ input[type="radio"].visually-hidden {
   padding-right:200px;
   padding-top:6px;
   padding-bottom:6px;
+  margin-bottom: 30px;
+  margin-left: 22px;
   text-transform: uppercase;
   border: none;
 }
@@ -271,6 +270,7 @@ input[type="radio"].visually-hidden {
 .calendar{
   width: 21px;
   height: 23px;
+  margin-right: 55px;
   background-color: var(--basic-white);
 }
 
