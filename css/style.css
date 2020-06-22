@@ -374,30 +374,41 @@ text-transform: uppercase;
 }
 
 .hotel-card {
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
   display: flex;
   flex-direction: row;
-  position: relative;
   padding-left:73px;
   padding-right: 71px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  border-bottom: 1px solid var(--blue-grey);
 }
 
 .hotel-information{
   /* Что это за странная ширина и почему она так влияет на размеры??? Как иначе подвинуть звезды рейтинга? Марджином? */
-
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 .hotel-picture {
-  padding-right: 29px;
-  padding-bottom: 0px;
+margin-right: 29px;
+margin-top: 30px;
+/* мне кажется что что то с размером картинки...*/
+margin-bottom: 30px;
 }
+
 .hotel-name {
+margin-top: 24px;
+margin-bottom: 30px;
 }
+.choice{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-bottom: -5px;
+margin-top: -7px;
+/* или ошибка тут?...*/
+
+}
+
 .hotel-link {
 font-style: normal;
 font-weight: 700;
@@ -411,40 +422,41 @@ color: var(--basic-blue);
 cursor: pointer;
 }
 .hotel-link:active {
- color: var(--basic-black);
- cursor: pointer;
- opacity: 0.3;
+color: var(--basic-black);
+cursor: pointer;
+opacity: 0.3;
 }
 
 .hotel-price {
- color: var(--grey-black);
- font-style: 400;
- font-weight: normal;
- font-size: 14px;
- line-height: 21px;
+color: var(--grey-black);
+font-style: 400;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
 }
 
-.hotel-rating {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+.hotel-type {
+color: var(--grey-black);
+font-style: 400;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
 }
 
 .details-hotels {
-  font: inherit;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 16px;
-  padding-right: 17px;
-  margin-right: 3px;
-  /* почему тут пришлось поставить 3 а не 6 как на макете? */
-  background-color:var(--basic-blue);
-  text-transform: uppercase;
-  color:var(--basic-white);
-  font-weight: 700;
-  font-style: normal;
-  border: none
+font: inherit;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 16px;
+padding-right: 17px;
+margin-right: 3px;
+/* почему тут пришлось поставить 3 а не 6 как на макете? */
+background-color:var(--basic-blue);
+text-transform: uppercase;
+color:var(--basic-white);
+font-weight: 700;
+font-style: normal;
+border: none
 }
 .details-hotels:hover,
 .details-hotels:focus {
@@ -452,52 +464,61 @@ background-color: var(--blue-hover);
 cursor: pointer;
 }
 
- .details-hotels:active {
-  background-color: var(--blue-push);
-  cursor: pointer;
+.details-hotels:active {
+background-color: var(--blue-push);
+cursor: pointer;
 }
 
 .booking-apartments {
-  font: inherit;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 16px;
-  padding-right: 17px;
-  background-color:var(--brown);
-  text-transform: uppercase;
-  color:var(--basic-white);
-  font-weight: 700;
-  font-style: normal;
-  border: none
+font: inherit;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 16px;
+padding-right: 17px;
+background-color:var(--brown);
+text-transform: uppercase;
+color:var(--basic-white);
+font-weight: 700;
+font-style: normal;
+border: none
 }
 .booking-apartments:hover,
 .booking-apartments:focus {
- background-color: var(--milk-chocolate);
- cursor: pointer;
+background-color: var(--milk-chocolate);
+cursor: pointer;
 }
 
 .booking-apartments:active {
-  background-color: var(--dark-chocolate);
-  cursor: pointer;
+background-color: var(--dark-chocolate);
+cursor: pointer;
 }
 
-
+.hotel-rating {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+.stars{
+margin-top: 29px;
+}
 
 .ratio {
- background-color:var(--neutral);
- text-transform: uppercase;
- color:var(--brown-grey);
- font-style: normal;
- font-weight: 400;
- font-size: 14px;
- line-height: 21px;
- text-align: center;
- padding-bottom: 3px;
- padding-left:15px;
- padding-right:12px;
- padding-top:3px;
+background-color:var(--neutral);
+text-transform: uppercase;
+color:var(--brown-grey);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+text-align: center;
+padding-bottom: 3px;
+padding-left:15px;
+padding-right:12px;
+padding-top:3px;
+margin-bottom: 30px;
+margin-top: 47px;
 }
-
 
 
 /* Footer */
