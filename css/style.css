@@ -222,6 +222,8 @@ input[type="radio"].visually-hidden {
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
   margin: auto;
+  /* Как только убрала жесткую ширину,форма развалилась,нужны пояснения. ВРоде дала паддинги всем строкам */
+
 }
 
 .appointment-item {
@@ -620,6 +622,8 @@ background-color: var(--basic-blue);
 .footer-copyright a:focus {
 background-color:var(--basic-blue);
 cursor: pointer;
+/* Почему-то картинка складывается */
+
 }
 .footer-copyright a:active {
   background-color:var(--light-brown);
