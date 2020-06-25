@@ -666,14 +666,68 @@ cursor: pointer;
   line-height: 21px;
 }
 
+.features {
+
+}
 .features-list {
-  background: var(--basic-white);
   text-align: center;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 1200px;
+  text-transform: uppercase;
+  margin-bottom: 82px;
 }
+
+.reasons-more{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.dignity-second {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.explanation-second {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--basic-blue);
+  text-transform: uppercase;
+  color: var(--basic-white);
+  padding-right: 49px;
+  padding-left: 50px;
+  max-height: 256px;
+}
+.features-second {
+  background-color: var(--light-grey);
+
+}
+.features-list-second {
+  text-align: center;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  text-transform: uppercase;
+  padding-top:47px;
+  padding-bottom: 54px;
+}
+
+.tagline-second{
+  font-size: 21px;
+  background-color:var(--light-grey);
+  text-transform: uppercase;
+}
+
+
+
+
 
 /* Ползунок */
 
@@ -758,7 +812,6 @@ cursor: pointer;
   color: var(--basic-white);
   border: none;
   border-radius: 5px;
-  background: red;
   font-family: inherit;
   font-size: inherit;
 }
