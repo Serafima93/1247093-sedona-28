@@ -666,9 +666,7 @@ cursor: pointer;
   line-height: 21px;
 }
 
-.features {
 
-}
 .features-list {
   text-align: center;
   list-style: none;
@@ -713,7 +711,6 @@ cursor: pointer;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  max-width: 1200px;
   text-transform: uppercase;
   padding-top:47px;
   padding-bottom: 54px;
@@ -721,8 +718,9 @@ cursor: pointer;
 
 .tagline-second{
   font-size: 21px;
-  background-color:var(--light-grey);
   text-transform: uppercase;
+  background-color:var(--light-grey);
+
 }
 
 
