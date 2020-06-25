@@ -10,30 +10,35 @@
 
 </head>
 <body>
-<section>
-  <h3>Настоящий городок</h3>
-  <p>№1</p>
-  <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-  <img src="img/logo-sedona.svg" width="138" height="70" alt="Фотография кафе Седоне">
+<section class="dignity-first">
+  <div class="explanation-first">
+  <h3 class="city">Настоящий<br>городок</h3>
+  <p class="city-explanation">№1</p>
+  <p class="city-explanation">Седона - не аттракцион для туристов,там<br>течёт своя жизнь</p>
+</div>
+<div>
+  <img src="img/cafe.jpg" width="800" height="256" alt="Фотография кафе Седоне">
+</div>
 </section>
-<section>
-  <ul>
-    <li>
+
+<section class="features">
+  <ul class="features-list">
+    <li class="feature-item">
       <h3>Жильё</h3>
       <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
     </li>
-    <li>
+    <li class="feature-item">
       <h3>Еда</h3>
       <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
     </li>
-    <li>
+    <li class="feature-item">
       <h3>Сувениры</h3>
       <p>Не только китайского, но и местного производства</p>
     </li>
   </ul>
 </section>
 <div class="">
-  <img src="img/logo-sedona.svg" width="138" height="70" alt="Фотография каньона в Седоне">
+  <img src="img/canyon.jpg" width="800" height="256" alt="Фотография каньона в Седоне">
   <h3>Там есть Мост дьявола</h3>
   <p>№2</p>
   <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -64,7 +69,7 @@
 
 
 <section>
-  <img src="img/mainphoto.jpg" width="1200" height="217" alt="Фотография каньона в городе Седона в размытом стиле">
+  <img src="img/blur.jpg" width="1200" height="217" alt="Фотография каньона в городе Седона в размытом стиле">
 </section>
 <section>
   <div>
@@ -106,7 +111,36 @@
 </form>
 </div>
 <div>
-  <!-- Здесь будет движок-->
+  <form method="get" action="https://echo.htmlacademy.ru">
+  <fieldset class="filter-item">
+      <legend>Стоимость в сутки (Р):</legend>
+      <div class="range-filter">
+        <div class="price-controls">
+          <label class="min-price">
+            от <input type="number" name="min-price" value="0">
+          </label>
+          <label class="max-price">
+            до <input type="number" name="max-price" value="15000">
+          </label>
+        </div>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style="
+              width: 30%;
+              margin-left: 20%
+            "></div>
+          </div>
+          <div class="toggle toggle-min" tabindex="0" style="
+            left: 0%
+          "></div>
+          <div class="toggle toggle-max" tabindex="0" style="
+            left: 70%
+          "></div>
+        </div>
+      </div>
+  </fieldset>
+  <button type="submit" class="show">Показать</button>
+</form>
 </div>
 </section>
 
