@@ -382,7 +382,9 @@ input[type="radio"].visually-hidden {
 
 /* hotels */
 
-
+.rent{
+  padding-bottom: 30px;
+}
 .reservation {
 border-bottom: 1px solid var(--blue-grey);
 text-transform: uppercase;
@@ -758,11 +760,55 @@ cursor: pointer;
   flex-wrap: wrap;
   list-style: none;
 }
-.parametrs {
-  padding-right: 32px;
+.about-price:hover,
+.about-price:focus {
+  color: var(--basic-blue);
+  border-bottom: 1px dashed var(--basic-blue);
+  cursor: pointer;
 }
+.about-price:active {
+  color: var(--basic-black);
+  cursor: pointer;
+}
+
+.parametrs {
+padding-right: 32px;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+text-transform: uppercase;
+color:var(--basic-blue);
+}
+
+.more {
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--basic-blue);
+}
+.more:hover,
+.more:focus{
+  color: var(--basic-blue);
+  cursor: pointer;
+  opacity: 1;
+}
+.more:active {
+  color: var(--basic-black);
+  cursor: pointer;
+  opacity: 1;
+  border: none;
+}
+
+
+
 .sorting {
-  padding-right: 40px;
+ padding-right: 40px;
+ font-style: normal;
+ font: inherit;
+ text-transform: uppercase;
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 18px;
 }
 /* Форма настороек параметров гостиниц */
 
@@ -770,8 +816,54 @@ cursor: pointer;
   background-image: url("../img/blur.jpg");
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-height: 217px;
 }
+.settings {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.show {
+ font: inherit;
+ padding-left: 36px;
+ padding-right: 35px;
+ padding-top: 7px;
+ padding-bottom: 8px;
+ background-color:var(--brown);
+ opacity: 0.9;
+ color:var(--basic-white);
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 21px;
+ border: 2px solid var(--basic-white);
+ border-radius: 2px;
+ text-transform: uppercase;
+}
+.show:hover,
+.show:focus{
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.show:active {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+
+
+
+
 
 
 /* Ползунок */

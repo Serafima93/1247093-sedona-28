@@ -11,12 +11,12 @@
 <body class="page-body">
   <div class="container">
 
-    <header class="main-header">
+    <header class="main-headert">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип путешествий по городу Седона - ведет на главную страницу.">
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation rent">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео </a></li>
           <li><a href="#">Карта Штата</a></li>
@@ -26,6 +26,87 @@
     </header>
 
   <main>
+    <section class="form-settings">
+      <div class="settings">
+      <div>
+      <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend>Инфраструктура</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="pool" id="pool" checked>
+            <label for="pool">Бассейн</label>
+          </li>
+          <li>
+            <input type="checkbox" name="parking" id="parking">
+            <label for="parking">Парковка</label>
+          </li>
+          <li>
+            <input type="checkbox" name="internet" id="internet">
+            <label for="internet">Wi-Fi</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    </div>
+
+    <div class="">
+      <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="hotel-first" id="hotel-first" checked>
+            <label for="hotel-first">Гостиница</label>
+          </li>
+          <li>
+            <input type="checkbox" name="hotel-second" id="hotel-second" checked>
+            <label for="parking">Мотель</label>
+          </li>
+          <li>
+            <input type="checkbox" name="hotel-third" id="hotel-third" checked>
+            <label for="hotel-third">Апартаменты</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    </div>
+    </div>
+
+    <div>
+      <form method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-item">
+          <legend>Стоимость в сутки (Р):</legend>
+          <div class="range-filter">
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="15000">
+              </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="
+                  width: 30%;
+                  margin-left: 20%
+                "></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" style="
+                left: 0%
+              "></div>
+              <div class="toggle toggle-max" tabindex="0" style="
+                left: 70%
+              "></div>
+            </div>
+          </div>
+      </fieldset>
+      <button type="submit" class="show">Показать</button>
+    </form>
+    </div>
+    </section>
+
     <section class="searching">
       <div class="search">
         <h2>НАЙДЕНО: 3</h2>
@@ -33,9 +114,9 @@
       <div>
         <ul class="sort">
           <li class="sorting">Сортировка:</li>
-          <li class="parametrs"><a href="#">По цене</a></li>
-          <li class="parametrs"><a href="#">По типу </a></li>
-          <li class="parametrs"><a href="#">По рейтингу</a></li>
+          <li class="parametrs"><a class="about-price" href="#">По цене</a></li>
+          <li class="parametrs"><a class="more" href="#">По типу </a></li>
+          <li class="parametrs"><a class="more" href="#">По рейтингу</a></li>
         </ul>
       </div>
       <div class="arrows">
