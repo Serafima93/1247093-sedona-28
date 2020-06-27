@@ -810,6 +810,58 @@ color:var(--basic-blue);
  font-size: 12px;
  line-height: 18px;
 }
+/* Стрелки вверх-вниз */
+
+.icon-up::before{
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-up-dir.svg");
+  width: 11px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.icon-up:hover::before,
+.icon-up:focus::before{
+  background-color:red;
+  cursor: pointer;
+}
+.icon-up:hover path,
+.icon-up:focus path {
+ fill: green;
+ cursor: pointer;
+}
+.icon-up:active::before {
+  background-color:var(--basic-blue);
+  cursor: pointer;
+}
+
+
+.icon-down::before{
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-down-dir.svg");
+  width: 11px;
+  height: 10px;
+  background-repeat: no-repeat;
+}
+
+.icon-down:hover::before,
+.icon-down:focus::before{
+  background-color:red;
+  cursor: pointer;
+}
+.icon-down:hover path,
+.icon-down:focus path {
+ fill: green;
+ cursor: pointer;
+}
+.icon-down:active::before {
+  background-color:var(--basic-blue);
+  cursor: pointer;
+}
+
 /* Форма настороек параметров гостиниц */
 
 .form-settings {
