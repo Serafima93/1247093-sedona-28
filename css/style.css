@@ -877,6 +877,60 @@ color:var(--basic-blue);
   flex-wrap: wrap;
 }
 
+.form-settings ul {
+ font:inherit;
+ list-style: none;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 21px;
+ color: var(--basic-white);
+ text-transform: uppercase;
+}
+
+.Choice{
+font:inherit;
+color: var(--basic-white);
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+text-transform: uppercase;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--basic-blue);
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -38px;
+  width: 23px;
+  height: 18px;
+  background-image: url("../img/Shape.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 .show {
  font: inherit;
@@ -910,7 +964,6 @@ color:var(--basic-blue);
   border-radius: 2px;
   cursor: pointer;
 }
-
 
 
 
