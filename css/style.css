@@ -76,10 +76,7 @@ input[type="radio"].visually-hidden {
 
 /* Main header */
 
-.main-header {
-  margin-bottom: 70px;
 
-}
 
 /* Main navigation*/
 
@@ -148,9 +145,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   padding-top: 43px;
   margin-top: -5px;
-}
-.background{
-  margin-top: -70px;
 }
 
 .background::after{
@@ -222,8 +216,8 @@ input[type="radio"].visually-hidden {
 
 /* Appointment */
 .formsearch {
-  display: flex;
-  flex-grow: wrap;
+  display: inline-flex;
+  flex-wrap: wrap;
   justify-content:space-around;
   padding-top: 55px;
   padding-bottom: 61px;
@@ -400,7 +394,6 @@ text-transform: uppercase;
 }
 
 .hotel-information{
-  /* Что это за странная ширина и почему она так влияет на размеры??? Как иначе подвинуть звезды рейтинга? Марджином? */
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -420,7 +413,6 @@ margin-bottom: 30px;
 .choice{
 display: flex;
 flex-direction: row;
-justify-content: space-around;
 margin-bottom: -5px;
 margin-top: -7px;
 /* или ошибка тут?...*/
@@ -451,6 +443,7 @@ font-style: 400;
 font-weight: normal;
 font-size: 14px;
 line-height: 21px;
+padding-left:30px;
 /* вопрос по словам- мотель,аппартаменты.. Все слова разный длинны. Мне стоит задать класс каждой гостинице и выровнять ее таким образом? Потому что инече марджины вырввнивают только чатсь слов*/
 }
 
@@ -515,12 +508,11 @@ cursor: pointer;
 .hotel-rating {
 display: flex;
 flex-direction: column;
-align-items: center;
-justify-content: space-around;
+align-items: flex-end;
+justify-content: space-between;
 }
 .stars{
 margin-top: 29px;
-/* такая же ситуация, давать каждой картике свой класс и выравнивать так, или же есть еще способ? */
 
 }
 
@@ -896,6 +888,7 @@ font-weight: 700;
 font-size: 16px;
 line-height: 21px;
 text-transform: uppercase;
+
 }
 .form-settings fieldset {
   border: none;
