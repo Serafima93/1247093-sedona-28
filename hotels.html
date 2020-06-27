@@ -74,19 +74,21 @@
     </div>
     </div>
 
-    <div>
+    <div class="toddler">
       <form method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="filter-item">
-          <legend>Стоимость в сутки (Р):</legend>
+          <legend class="price-for-day">Стоимость в сутки (Р):</legend>
           <div class="range-filter">
+
             <div class="price-controls">
               <label class="min-price">
                 от <input type="number" name="min-price" value="0">
               </label>
               <label class="max-price">
-                до <input type="number" name="max-price" value="15000">
+                до <input type="number" name="max-price" value="1500">
               </label>
             </div>
+
             <div class="range-controls">
               <div class="scale">
                 <div class="bar" style="
@@ -101,9 +103,10 @@
                 left: 70%
               "></div>
             </div>
+
           </div>
       </fieldset>
-      <button type="submit" class="show">Показать</button>
+      <button type="button" class="show">Показать</button>
     </form>
     </div>
     </section>

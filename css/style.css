@@ -897,6 +897,9 @@ font-size: 16px;
 line-height: 21px;
 text-transform: uppercase;
 }
+.form-settings fieldset {
+  border: none;
+}
 
 .filter-input-checkbox:hover + label,
 .filter-input-checkbox:focus + label {
@@ -908,6 +911,8 @@ text-transform: uppercase;
   display: block;
   cursor: pointer;
   user-select: none;
+  padding-bottom: 25px;
+
 }
 .filter-input-checkbox + label::before {
   content: "";
@@ -1035,9 +1040,26 @@ text-transform: uppercase;
   left: 160px;
 }
 
+.price-for-day {
+  font: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
 .price-controls {
   display: flex;
   justify-content: space-between;
+  color: var(--basic-white);
+  font-style: normal;
+  font: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  text-transform: uppercase;
 }
 
 .price-controls label {
