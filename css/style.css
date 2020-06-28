@@ -16,6 +16,7 @@
   --neutral-hover:#EBEBEB;
   --brown-grey:#666666;
   --silver:#ABABAB;
+  --blue-brown:#6A6A6A
 }
 
 body {
@@ -964,10 +965,8 @@ text-transform: uppercase;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
 }
-.filter-input-checkbox + label::before:disabled {
-
-  border: 2px solid var(--basic-black);
-  border-radius: 2px;
+.filter-input-checkbox:disabled+ label::before {
+  border: 2px solid var(--blue-brown);
 }
 
 
@@ -981,6 +980,9 @@ text-transform: uppercase;
   background-image: url("../img/Shape.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+.filter-input-checkbox:checked:disabled + label::after {
+  background-image: url("../img/Shape-2.svg");
 }
 
 .show {
