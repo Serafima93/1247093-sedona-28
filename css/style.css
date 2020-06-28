@@ -16,7 +16,7 @@
 	--neutral-hover: #EBEBEB;
 	--brown-grey: #666666;
 	--silver: #ABABAB;
-	--blue-brown: #6A6A6A
+	--blue-brown: #6A6A6A;
 }
 
 body {
@@ -831,6 +831,7 @@ a[href^="tel:"] {
 	flex-direction: row;
 	flex-wrap: wrap;
 	list-style: none;
+  padding-left: 73px;
 }
 
 .about-price:hover,
@@ -956,6 +957,8 @@ a[href^="tel:"] {
 .settings {
 	display: flex;
 	flex-wrap: wrap;
+  margin-left: -100px;
+  margin-top: 26px;
 }
 
 .form-settings ul {
@@ -968,7 +971,9 @@ a[href^="tel:"] {
 	color: var(--basic-white);
 	text-transform: uppercase;
 }
-
+.type-of-house{
+  margin-left: 107px;
+}
 .Choice {
 	font: inherit;
 	color: var(--basic-white);
@@ -1033,8 +1038,6 @@ a[href^="tel:"] {
 	padding-right: 35px;
 	padding-top: 7px;
 	padding-bottom: 8px;
-	background-color: var(--brown);
-	opacity: 0.9;
 	color: var(--basic-white);
 	font-style: normal;
 	font-weight: 400;
@@ -1087,6 +1090,7 @@ a[href^="tel:"] {
 	position: relative;
 	height: 41px;
 	margin-bottom: 15px;
+  margin-top: -15px;
 	padding-top: 39px;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -1134,6 +1138,7 @@ a[href^="tel:"] {
 	line-height: 21px;
 	text-transform: uppercase;
 	color: var(--basic-white);
+  padding-top: 26px;
 }
 
 .price-controls {
@@ -1148,12 +1153,14 @@ a[href^="tel:"] {
 	border: 2px solid var(--basic-white);
 	border-radius: 2px;
 	text-transform: uppercase;
+  margin-top: -40px;
 }
 
 .price-controls label {
 	text-transform: uppercase;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 16px;
+
 }
 
 .price-controls input {
@@ -1166,4 +1173,5 @@ a[href^="tel:"] {
 	border-radius: 5px;
 	font-family: inherit;
 	font-size: inherit;
+  background-color:red;
 }
