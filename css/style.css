@@ -170,6 +170,7 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-white);
   text-transform: uppercase;
   padding-top: 57px;
+  padding-bottom: 82px;
 }
 .interes {
   line-height: 24px;
@@ -226,11 +227,8 @@ input[type="radio"].visually-hidden {
   background-color:var(--basic-white);
   text-transform: uppercase;
   color: var(--basic-black);
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
   margin: auto;
-  /* Как только убрала жесткую ширину,форма развалилась,нужны пояснения. ВРоде дала паддинги всем строкам */
-
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .appointment-item {
@@ -259,20 +257,47 @@ input[type="radio"].visually-hidden {
   border: 2px solid var(--blue-grey);
   background-color:var(--basic-white);
 }
+.numbers{
+  display: flex;
+  flex-wrap: wrap;
+}
+.appointment-number input{
+  font: inherit;
+  background-color: var(--neutral);
+  border: none;
+  margin-bottom: 54px;
+}
+
+.appointment-number input:hover {
+  background-color:var(--neutral-hover);
+}
+.appointment-number input:focus {
+  border: 2px solid var(--blue-grey);
+  background-color:var(--basic-white);
+}
 
 .children {
-  width: 114px;
 }
 .children input {
- padding: 6px;
  text-transform: uppercase;
+ width: 26px;
+ padding-top: 5px;
+ padding-right: 1px;
+ padding-bottom: 5px;
+ padding-left: 1px;
+ text-align: center;
 }
-.adults {
-  width: 114px;
+.adults label {
+  padding-right: 27px;
 }
 .adults input {
-  padding:6px;
   text-transform: uppercase;
+  width: 26px;
+  padding-top: 5px;
+  padding-right: 1px;
+  padding-bottom: 5px;
+  padding-left: 1px;
+  text-align: center;
 }
 
 
@@ -284,11 +309,11 @@ input[type="radio"].visually-hidden {
 }
 
 .calendar:hover,
-.social-button:focus {
+.calendar:focus {
  background-color:var(--basic-white);
 }
 .calendar:hover path,
-.social-button:focus path {
+.calendar:focus path {
  fill: var(--basic-black);
  cursor: pointer;
 }
@@ -301,6 +326,16 @@ input[type="radio"].visually-hidden {
  fill: var(--basic-blue);
 }
 
+.minus + input::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border: 2px solid var(--basic-black);
+  border-radius: 2px;
+}
 
 .minus::before{
   content: "";
@@ -402,7 +437,6 @@ text-transform: uppercase;
 .hotel-picture {
 margin-right: 29px;
 margin-top: 30px;
-/* мне кажется что что то с размером картинки...*/
 margin-bottom: 30px;
 }
 
@@ -443,7 +477,7 @@ font-style: 400;
 font-weight: normal;
 font-size: 14px;
 line-height: 21px;
-padding-left:30px;
+margin-left:30px;
 /* вопрос по словам- мотель,аппартаменты.. Все слова разный длинны. Мне стоит задать класс каждой гостинице и выровнять ее таким образом? Потому что инече марджины вырввнивают только чатсь слов*/
 }
 
@@ -540,18 +574,19 @@ margin-top: 47px;
  width: 1200px;
  color: var(--basic-black);
  background-color: var(--basic-white);
- outline: 5px solid rgba(255, 0, 0, 0.7);
- outline-offset: -5px;
+ background: rgba(255, 255, 255, 0.9);
 }
 .company-information{
   display: flex;
   justify-content: space-between;
 }
+footer > .company-information{
+  padding-left: 111px;
+  padding-right: 138px;
+  padding-top: 23px;
+  padding-bottom: 36px;
+}
 .footer-contacts {
-  margin-right: 163px;
-  margin-left: 111px;
-  margin-bottom: 36px;
-  margin-top: 23px;
   text-align: center;
   line-height: 26px;
   font-weight: 700;
@@ -560,8 +595,10 @@ margin-top: 47px;
   text-transform: uppercase;
   outline: 5px solid rgba(0, 255, 255, 0.7);
   outline-offset: -5px;
+
 }
 .phone {
+  margin-top:-20px;
 }
 a[href^="tel:"] {
   color: var(--basic-black);
@@ -571,12 +608,9 @@ a[href^="tel:"] {
 }
 
 .footer-social {
-  margin-bottom: 36px;
-  margin-top: 36px;
-  margin-left: 0px;
-  margin-right: 190px;
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
+
 }
 .footer-social ul {
   display: flex;
@@ -586,14 +620,16 @@ a[href^="tel:"] {
   width: 151px;
 }
 .social-button {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-color: inherit;
-width: 46px;
-height: 48px;
-background-color: var(--basic-blue);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-blue);
+
 }
 
  .social-button:hover,
@@ -615,10 +651,9 @@ background-color: var(--basic-blue);
 }
 
 .footer-copyright {
- margin-right: 138px;
- margin-left: 0;
- margin-bottom: 41px;
- margin-top: 38px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
  font-weight: 400;
  font-size: 14px;
  text-transform: uppercase;
@@ -626,17 +661,29 @@ background-color: var(--basic-blue);
  outline-offset: -5px;
 }
 
-.footer-copyright a:hover,
-.footer-copyright a:focus {
-background-color:var(--basic-blue);
-cursor: pointer;
-/* Почему-то картинка складывается */
+.academy {
+  padding-left: 8px;
+}
 
+.academy:hover,
+.academy:focus {
+ background-color:var(--basic-white);
 }
-.footer-copyright a:active {
-  background-color:var(--light-brown);
-  cursor: pointer;
+.academy:hover path,
+.academy:focus path {
+ fill: var(--basic-blue);
+ cursor: pointer;
 }
+
+.academy:active {
+ fill: var(--basic-white);
+ cursor: pointer;
+}
+.academy:active path {
+ fill: var(--light-brown);
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 
 /* Вторая часть */
