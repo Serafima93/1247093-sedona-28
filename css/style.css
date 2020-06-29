@@ -100,6 +100,8 @@ input[type="radio"].visually-hidden {
 /* site navigation */
 
 .site-navigation {
+  outline: 5px solid red;
+  outline-offset: -5px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -258,6 +260,8 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 26px;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
 }
 
 .appointment-item input {
@@ -285,6 +289,7 @@ input[type="radio"].visually-hidden {
 .numbers {
 	display: flex;
 	flex-wrap: wrap;
+
 }
 
 .appointment-number input {
@@ -303,6 +308,11 @@ input[type="radio"].visually-hidden {
 	background-color: var(--basic-white);
 }
 
+.appointment-number button {
+  width: 30px;
+  height: 30px;
+  border: none;
+}
 .children {}
 
 .children input {
@@ -673,7 +683,9 @@ a[href^="tel:"] {
   margin-top: 15px;
   margin-bottom: 0px;
   margin-right: 0px;
-  margin-left: -35px;
+  margin-left: -25px;
+  padding: 0;
+  padding-left: 26px;
 }
 
 .social-button {
@@ -717,7 +729,7 @@ a[href^="tel:"] {
 	text-transform: uppercase;
 	outline: 5px solid rgba(255, 0, 255, 0.7);
 	outline-offset: -5px;
-  margin-left: 150px;
+  margin-left: 165px;
 }
 
 
