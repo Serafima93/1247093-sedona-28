@@ -888,7 +888,9 @@ a[href^="tel:"] {
 
 
 /* Стрелки вверх-вниз */
-
+.arrows{
+  position: relative;
+}
 .icon-up::before {
 	content: "";
 	position: absolute;
@@ -897,17 +899,13 @@ a[href^="tel:"] {
 	height: 10px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
+  left:-5px;
+  bottom:15px;
 }
 
 .icon-up:hover::before,
 .icon-up:focus::before {
-	background-color: red;
-	cursor: pointer;
-}
-
-.icon-up:hover path,
-.icon-up:focus path {
-	fill: green;
+	background-color:var(--basic-black);
 	cursor: pointer;
 }
 
@@ -923,19 +921,16 @@ a[href^="tel:"] {
 	width: 11px;
 	height: 10px;
 	background-repeat: no-repeat;
+  left:15px;
+  bottom:15px;
 }
 
 .icon-down:hover::before,
 .icon-down:focus::before {
-	background-color: red;
+	background-color: var(--basic-black);
 	cursor: pointer;
 }
 
-.icon-down:hover path,
-.icon-down:focus path {
-	fill: green;
-	cursor: pointer;
-}
 
 .icon-down:active::before {
 	background-color: var(--basic-blue);
