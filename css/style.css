@@ -470,6 +470,9 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-picture {
+  	/*Вопрос по картинке. Почему на пиксель перфекте показывает что картинка больше.
+     С масштабом все в порядке,с параметрами тоже.
+     В фигме проверила*/
 	margin-right: 29px;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -485,7 +488,6 @@ input[type="radio"].visually-hidden {
 	flex-direction: row;
 	margin-bottom: -5px;
 	margin-top: -7px;
-	/* или ошибка тут?...*/
 }
 
 .hotel-link {
@@ -532,7 +534,6 @@ input[type="radio"].visually-hidden {
 	padding-left: 16px;
 	padding-right: 17px;
 	margin-right: 3px;
-	/* почему тут пришлось поставить 3 а не 6 как на макете? */
 	background-color: var(--basic-blue);
 	text-transform: uppercase;
 	color: var(--basic-white);
@@ -681,7 +682,6 @@ a[href^="tel:"] {
 	width: 46px;
 	height: 48px;
 	background-color: var(--basic-blue);
-
 }
 
 .social-button:hover,
@@ -713,15 +713,16 @@ a[href^="tel:"] {
 	text-transform: uppercase;
 	outline: 5px solid rgba(255, 0, 255, 0.7);
 	outline-offset: -5px;
+  margin-left: 150px;
 }
 
 
 .academy {
 	padding-left: 8px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .develop{
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .academy:hover,
 .academy:focus {
