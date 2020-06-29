@@ -324,13 +324,16 @@ input[type="radio"].visually-hidden {
 .calendar {
 	width: 21px;
 	height: 23px;
-	margin-right: 55px;
-	background-color: var(--basic-white);
+	background-color: var(-neutra);
+  position: relative;
+  right:35px;
+  top:5px;
+
 }
 
 .calendar:hover,
 .calendar:focus {
-	background-color: var(--basic-white);
+	background-color: var(--neutral);
 }
 
 .calendar:hover path,
@@ -605,7 +608,6 @@ input[type="radio"].visually-hidden {
 	width: 1200px;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
-	background: rgba(255, 255, 255, 0.9);
 }
 
 .company-information {
