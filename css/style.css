@@ -656,7 +656,7 @@ a[href^="tel:"] {
 	outline: 5px solid rgba(0, 255, 0, 0.7);
 	outline-offset: -5px;
   width: 200px;
-
+  margin-left: 0;
 }
 
 .footer-social ul {
@@ -664,6 +664,11 @@ a[href^="tel:"] {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	list-style: none;
+  width: 151px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: -35px;
 }
 
 .social-button {
@@ -676,6 +681,7 @@ a[href^="tel:"] {
 	width: 46px;
 	height: 48px;
 	background-color: var(--basic-blue);
+
 }
 
 .social-button:hover,
