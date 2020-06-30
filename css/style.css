@@ -233,21 +233,16 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* Appointment
-
-Мне просто критично важно понять эти паддинги-марджины. Я понимаю что первое это величина пространства от слова (объекта).
-екий воздух который обтекает объект. А марджин это расстояние между объектами. Но почему когда я беру данные с макета,
-все выстраивается совсем по-другому? Как будто есть еще какая-то величина, которую надо учитывать..
-.Например в форме. Почему когда ставишь величины по макету, она начинает растягиваться, и приходится самому подбирать величины*/
+/* Appointment*/
 
 .formsearch {
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	padding-top: 55px;
-	padding-bottom: 61px;
-	padding-right: 20px;
-	padding-left: 25px;
+	padding-bottom: 52px;
+	padding-right: 25px;
+	padding-left: 55px;
 	background-color: var(--basic-white);
 	text-transform: uppercase;
 	color: var(--basic-black);
@@ -260,19 +255,19 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 26px;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
+
+
 }
 
 .appointment-item input {
 	font: inherit;
 	background-color: var(--neutral);
 	padding-left: 13px;
-	padding-right: 200px;
+	padding-right: 175px;
 	padding-top: 6px;
 	padding-bottom: 6px;
 	margin-bottom: 30px;
-	margin-left: 22px;
+	margin-left: 10px;
 	text-transform: uppercase;
 	border: none;
 }
@@ -288,10 +283,15 @@ input[type="radio"].visually-hidden {
 
 .numbers {
 	display: flex;
-	flex-wrap: wrap;
-
+  flex-wrap: wrap;
 }
 
+.appointment-number{
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
 .appointment-number input {
 	font: inherit;
 	background-color: var(--neutral);
@@ -309,33 +309,45 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-number button {
-  width: 30px;
-  height: 30px;
+  width: 38px;
+  height: 38px;
   border: none;
+  padding: 0;
 }
-.children {}
+.adults > .minus{
+  margin-left: 8px;
+}
+.children > .minus{
+  margin-left: 3px;
+}
+.children {
+}
+
+.children label {
+  margin-top: 7px;
+  padding-right: 24px;
+  margin-left: 52px;
+}
 
 .children input {
 	text-transform: uppercase;
-	width: 26px;
-	padding-top: 5px;
-	padding-right: 1px;
-	padding-bottom: 5px;
-	padding-left: 1px;
+	width: 38px;
+  height: 38px;
+  padding: 0;
 	text-align: center;
 }
 
 .adults label {
+  margin-top: 7px;
 	padding-right: 27px;
 }
 
+
 .adults input {
 	text-transform: uppercase;
-	width: 26px;
-	padding-top: 5px;
-	padding-right: 1px;
-	padding-bottom: 5px;
-	padding-left: 1px;
+	width: 38px;
+  height: 38px;
+  padding: 0;
 	text-align: center;
 }
 
@@ -368,16 +380,8 @@ input[type="radio"].visually-hidden {
 .calendar:active path {
 	fill: var(--basic-blue);
 }
-
-.minus+input::before {
-	content: "";
-	position: absolute;
-	left: -42px;
-	top: 0;
-	width: 23px;
-	height: 23px;
-	border: 2px solid var(--basic-black);
-	border-radius: 2px;
+.minus {
+  position: relative;
 }
 
 .minus::before {
@@ -388,6 +392,7 @@ input[type="radio"].visually-hidden {
 	height: 11px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
+  left: 15px;
 }
 
 .minus:hover::before,
@@ -400,6 +405,9 @@ input[type="radio"].visually-hidden {
 	background-color: var(--basic-blue);
 	cursor: pointer;
 }
+.plus{
+  position: relative;
+}
 
 .plus::before {
 	content: " ";
@@ -409,6 +417,8 @@ input[type="radio"].visually-hidden {
 	height: 11px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
+  left: 15px;
+  bottom: 12px;
 }
 
 .plus:hover::before,
