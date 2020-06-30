@@ -116,7 +116,6 @@ input[type="radio"].visually-hidden {
 }
 .Selections:nth-child(2){
   margin-right: 130px;
-
 }
 .Selections:nth-child(3){
   margin-left: 100px;
@@ -555,8 +554,6 @@ input[type="radio"].visually-hidden {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
-	margin-left: 30px;
-	/* вопрос по словам- мотель,аппартаменты.. Все слова разный длинны. Мне стоит задать класс каждой гостинице и выровнять ее таким образом? Потому что инече марджины вырввнивают только чатсь слов*/
 }
 
 .hotel-type {
@@ -565,6 +562,9 @@ input[type="radio"].visually-hidden {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
+  max-width:50px;
+  margin-right: 70px;
+
 }
 
 .details-hotels {
@@ -665,6 +665,8 @@ footer>.company-information {
 	padding-right: 138px;
   padding-top: 23px;
   padding-bottom: 36px;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+	outline-offset: -5px;
 }
 
 .footer-contacts {
@@ -674,8 +676,6 @@ footer>.company-information {
 	font-size: 21px;
 	color: var(--basic-black);
 	text-transform: uppercase;
-	outline: 5px solid rgba(0, 255, 255, 0.7);
-	outline-offset: -5px;
   margin-right: 163px;
 }
 .heshtag {
@@ -694,8 +694,6 @@ a[href^="tel:"] {
 }
 
 .footer-social {
-	outline: 5px solid rgba(0, 255, 0, 0.7);
-	outline-offset: -5px;
   width: 200px;
   margin-left: 0;
 }
@@ -753,8 +751,6 @@ a[href^="tel:"] {
 	font-weight: 400;
 	font-size: 14px;
 	text-transform: uppercase;
-	outline: 5px solid rgba(255, 0, 255, 0.7);
-	outline-offset: -5px;
   margin-left: 165px;
 }
 
