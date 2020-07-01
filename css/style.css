@@ -153,12 +153,21 @@ input[type="radio"].visually-hidden {
 
 /* Main-part */
 
-.tagline {
+.introduction {
 	font-size: 21px;
 	background-color: var(--basic-white);
 	text-transform: uppercase;
 	padding-top: 43px;
 	margin-top: -5px;
+}
+.tagline {
+	font-size: 21px;
+	background-color: var(--basic-white);
+	text-transform: uppercase;
+	padding-top: 28px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 25px;
 }
 .abstract{
   position: relative;
@@ -810,13 +819,19 @@ a[href^="tel:"] {
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 21px;
+	margin-top: 47px;
+	margin-bottom: 25px;
 }
-
+.city-number {
+	margin-top: 0;
+	margin-bottom: 0;
+}
 .city-explanation {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
+	margin-top:23px;
 }
 
 .features-list {
@@ -827,8 +842,8 @@ a[href^="tel:"] {
 	grid-template-columns: 1fr 1fr 1fr;
 	max-width: 1200px;
 	text-transform: uppercase;
-	padding-top: 60px;
-	padding-bottom: 82px;
+	padding-top: 40px;
+	padding-bottom: 0px;
 	margin-bottom: 0;
 	margin-top: 0;
 }
@@ -838,6 +853,9 @@ a[href^="tel:"] {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
+	padding-bottom: 82px;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .dignity-second {
