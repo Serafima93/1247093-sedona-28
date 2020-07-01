@@ -902,7 +902,7 @@ a[href^="tel:"] {
 	margin-top: -6px;
 	padding-bottom: 5px;
 }
-
+/*Почему-то в мозиле этот блок разваливается. Не могу найти ошибку...С чем это может быть связано?*/
 .features-list-second {
 	text-align: center;
 	list-style: none;
@@ -1074,7 +1074,10 @@ a[href^="tel:"] {
   margin-left: -100px;
   margin-top: 26px;
 }
-
+.form-settings fieldset {
+	padding: 0;
+	margin: 0;
+}
 .form-settings ul {
 	font: inherit;
 	list-style: none;
@@ -1088,7 +1091,7 @@ a[href^="tel:"] {
 .type-of-house{
   margin-left: 107px;
 }
-.Choice {
+.decision {
 	font: inherit;
 	color: var(--basic-white);
 	font-style: normal;
@@ -1096,6 +1099,10 @@ a[href^="tel:"] {
 	font-size: 16px;
 	line-height: 21px;
 	text-transform: uppercase;
+}
+.filters {
+	margin-top:24px;
+	margin-bottom: 0;
 }
 
 .form-settings fieldset {
@@ -1120,14 +1127,15 @@ a[href^="tel:"] {
 	position: absolute;
 	left: -42px;
 	top: 0;
-	width: 23px;
-	height: 23px;
+	width: 21px;
+	height: 21px;
 	border: 2px solid var(--basic-white);
 	border-radius: 2px;
 }
 
 .filter-input-checkbox:disabled+label::before {
 	border: 2px solid var(--blue-brown);
+
 }
 
 .filter-input-checkbox:checked+label::after {
@@ -1148,8 +1156,8 @@ a[href^="tel:"] {
 
 .show {
 	font: inherit;
-	padding-left: 36px;
-	padding-right: 35px;
+	padding-left: 35px;
+	padding-right: 34px;
 	padding-top: 7px;
 	padding-bottom: 8px;
 	color: var(--basic-white);
@@ -1160,6 +1168,8 @@ a[href^="tel:"] {
 	border: 2px solid var(--basic-white);
 	border-radius: 2px;
 	text-transform: uppercase;
+	background-color: transparent;
+
 }
 
 .show:hover,
