@@ -921,21 +921,31 @@ a[href^="tel:"] {
 	flex-direction: row;
 	flex-wrap: wrap;
 	background-color: var(--basic-white);
-	justify-content: space-around;
+	justify-content: flex-start;
 	border-bottom: 1px solid var(--blue-grey);
-	margin-top: -10px;
+	margin-bottom: 0;
+	padding-left: 73px;
+	padding-right: 73px;
+	padding-bottom: 31px;
 }
-.search{
-  margin-left: -43px;
-  margin-top: 15px;
+
+.search h2 {
+	margin: 0;
+	margin-right: 46px;
+	padding-top: 29px;
+
+
 }
 .sort {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	list-style: none;
-  padding-top: 31px;
-  padding-bottom: 37px;
+	margin:0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 31px;
 }
 
 .about-price:hover,
@@ -1003,18 +1013,18 @@ a[href^="tel:"] {
 	height: 10px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-  left:-5px;
-  bottom:15px;
+  left:470px;
+  bottom:5px;
 }
 
 .icon-up:hover::before,
 .icon-up:focus::before {
-	background-color:var(--basic-black);
+	background-image: url("../img/icon-up-black.svg");
 	cursor: pointer;
 }
 
 .icon-up:active::before {
-	background-color: var(--basic-blue);
+	background-image: url("../img/icon-up-blue.svg");
 	cursor: pointer;
 }
 
@@ -1025,19 +1035,19 @@ a[href^="tel:"] {
 	width: 11px;
 	height: 10px;
 	background-repeat: no-repeat;
-  left:15px;
-  bottom:15px;
+  left:495px;
+  bottom:5px;
 }
 
 .icon-down:hover::before,
 .icon-down:focus::before {
-	background-color: var(--basic-black);
+	background-image: url("../img/icon-down-black.svg");
 	cursor: pointer;
 }
 
 
 .icon-down:active::before {
-	background-color: var(--basic-blue);
+	background-image: url("../img/icon-down-blue.svg");
 	cursor: pointer;
 }
 
