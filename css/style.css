@@ -351,8 +351,6 @@ input[type="radio"].visually-hidden {
 .children>.minus {
 }
 
-.children {}
-
 .children label {
 	margin-top: 7px;
 	padding-right: 24px;
@@ -436,6 +434,9 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
+.exp {
+	padding-right: 30px;
+}
 
 /*Почему у меня при нажатие высвечивается плюс? */
 
