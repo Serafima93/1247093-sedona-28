@@ -1229,7 +1229,6 @@ a[href^="tel:"] {
 	height: 2px;
 	background: var(--basic-white);
 	opacity: 0.3;
-
 }
 
 .range-controls .toggle {
