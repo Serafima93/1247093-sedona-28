@@ -30,8 +30,6 @@ body {
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 	background-position: top center;
-
-
 }
 
 .container {
@@ -41,8 +39,7 @@ body {
 	margin: 0 auto;
 	padding: 0 40px;
 	background-color: var(--background);
-  /* Буду рада комментариям про обводку, правильно ли я сделала. Цвет взяла из фигмы, но тут вроде темнее...*/
-
+	/* Буду рада комментариям про обводку, правильно ли я сделала. Цвет взяла из фигмы, но тут вроде темнее...*/
 }
 
 .text-center {
@@ -85,8 +82,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-
-
 /* Main navigation*/
 
 .main-navigation {
@@ -104,22 +99,25 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	margin:0;
-  padding-left: 72px;
-  padding-right: 72px;
+	margin: 0;
+	padding-left: 72px;
+	padding-right: 72px;
 	min-height: 58px;
 	list-style: none;
 }
-/
-.site-navigation-current a:not([href]) {
+
+/ .site-navigation-current a:not([href]) {
 	background-color: var(--basic-black);
 }
-.Selections:nth-child(2){
-  margin-right: 130px;
+
+.Selections:nth-child(2) {
+	margin-right: 130px;
 }
-.Selections:nth-child(3){
-  margin-left: 100px;
+
+.Selections:nth-child(3) {
+	margin-left: 100px;
 }
+
 .site-navigation a {
 	color: var(--basic-black);
 	text-transform: uppercase;
@@ -147,7 +145,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-  z-index: 1;
+	z-index: 1;
 }
 
 
@@ -160,6 +158,7 @@ input[type="radio"].visually-hidden {
 	padding-top: 43px;
 	margin-top: -5px;
 }
+
 .tagline {
 	font-size: 21px;
 	background-color: var(--basic-white);
@@ -169,17 +168,19 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 0;
 	padding-bottom: 25px;
 }
-.abstract{
-  position: relative;
+
+.abstract {
+	position: relative;
 }
+
 .abstract::before {
-  position: absolute;
+	position: absolute;
 	content: " ";
 	background-image: url("../img/pices.png");
 	width: 100%;
 	height: 57px;
-  background-repeat: no-repeat;
-  bottom: 27%;
+	background-repeat: no-repeat;
+	bottom: 27%;
 }
 
 .reasons {
@@ -208,17 +209,18 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	background-color: var(--basic-white);
 	text-transform: uppercase;
-  margin-top: 0;
+	margin-top: 0;
 }
-.appointment-info{
-  font: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 45px;
+
+.appointment-info {
+	font: inherit;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 45px;
 }
 
 
@@ -280,8 +282,6 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 26px;
-
-
 }
 
 .appointment-item input {
@@ -308,15 +308,14 @@ input[type="radio"].visually-hidden {
 
 .numbers {
 	display: flex;
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
-.appointment-number{
-  display: flex;
-  flex-wrap: wrap;
-
-
+.appointment-number {
+	display: flex;
+	flex-wrap: wrap;
 }
+
 .appointment-number input {
 	font: inherit;
 	background-color: var(--neutral);
@@ -334,45 +333,46 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-number button {
-  width: 38px;
-  height: 38px;
-  border: none;
-  padding: 0;
-}
-.adults > .minus{
-  margin-left: 8px;
-}
-.children > .minus{
-  margin-left: 3px;
-}
-.children {
+	width: 38px;
+	height: 38px;
+	border: none;
+	padding: 0;
 }
 
+.adults>.minus {
+	margin-left: 8px;
+}
+
+.children>.minus {
+	margin-left: 3px;
+}
+
+.children {}
+
 .children label {
-  margin-top: 7px;
-  padding-right: 24px;
-  margin-left: 52px;
+	margin-top: 7px;
+	padding-right: 24px;
+	margin-left: 52px;
 }
 
 .children input {
 	text-transform: uppercase;
 	width: 38px;
-  height: 38px;
-  padding: 0;
+	height: 38px;
+	padding: 0;
 	text-align: center;
 }
 
 .adults label {
-  margin-top: 7px;
+	margin-top: 7px;
 	padding-right: 27px;
 }
-
 
 .adults input {
 	text-transform: uppercase;
 	width: 38px;
-  height: 38px;
-  padding: 0;
+	height: 38px;
+	padding: 0;
 	text-align: center;
 }
 
@@ -380,10 +380,9 @@ input[type="radio"].visually-hidden {
 	width: 21px;
 	height: 23px;
 	background-color: var(-neutra);
-  position: relative;
-  right:35px;
-  top:5px;
-
+	position: relative;
+	right: 35px;
+	top: 5px;
 }
 
 .calendar:hover,
@@ -405,8 +404,9 @@ input[type="radio"].visually-hidden {
 .calendar:active path {
 	fill: var(--basic-blue);
 }
+
 .minus {
-  position: relative;
+	position: relative;
 }
 
 .minus::before {
@@ -417,7 +417,7 @@ input[type="radio"].visually-hidden {
 	height: 11px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-  left: 15px;
+	left: 15px;
 }
 
 .minus:hover::before,
@@ -430,12 +430,12 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/Rectangle-blue.svg");
 	cursor: pointer;
 }
+
+
 /*Почему у меня при нажатие высвечивается плюс? */
 
-
-
-.plus{
-  position: relative;
+.plus {
+	position: relative;
 }
 
 .plus::before {
@@ -446,8 +446,8 @@ input[type="radio"].visually-hidden {
 	height: 11px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-  left: 15px;
-  bottom: 12px;
+	left: 15px;
+	bottom: 12px;
 }
 
 .plus:hover::before,
@@ -523,7 +523,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-picture {
-  	/*Вопрос по картинке. Почему на пиксель перфекте показывает что картинка больше.
+	/*Вопрос по картинке. Почему на пиксель перфекте показывает что картинка больше.
      С масштабом все в порядке,с параметрами тоже.
      В фигме проверила*/
 	margin-right: 29px;
@@ -576,9 +576,8 @@ input[type="radio"].visually-hidden {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
-  max-width:50px;
-  margin-right: 70px;
-
+	max-width: 50px;
+	margin-right: 70px;
 }
 
 .details-hotels {
@@ -677,9 +676,9 @@ input[type="radio"].visually-hidden {
 footer>.company-information {
 	padding-left: 111px;
 	padding-right: 138px;
-  padding-top: 23px;
-  padding-bottom: 36px;
-  /*outline: 5px solid rgba(0, 255, 255, 0.7);
+	padding-top: 23px;
+	padding-bottom: 36px;
+	/*outline: 5px solid rgba(0, 255, 255, 0.7);
 	outline-offset: -5px;*/
 }
 
@@ -690,14 +689,16 @@ footer>.company-information {
 	font-size: 21px;
 	color: var(--basic-black);
 	text-transform: uppercase;
-  margin-right: 163px;
+	margin-right: 163px;
 }
+
 .heshtag {
-  margin-top: 0;
+	margin-top: 0;
 }
+
 .phone {
-  margin-top: -5px;
-  margin-bottom: 0;
+	margin-top: -5px;
+	margin-bottom: 0;
 }
 
 a[href^="tel:"] {
@@ -708,8 +709,8 @@ a[href^="tel:"] {
 }
 
 .footer-social {
-  width: 200px;
-  margin-left: 0;
+	width: 200px;
+	margin-left: 0;
 }
 
 .footer-social ul {
@@ -717,13 +718,13 @@ a[href^="tel:"] {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	list-style: none;
-  width: 151px;
-  margin-top: 15px;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-left: -25px;
-  padding: 0;
-  padding-left: 26px;
+	width: 151px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: -25px;
+	padding: 0;
+	padding-left: 26px;
 }
 
 .social-button {
@@ -765,17 +766,18 @@ a[href^="tel:"] {
 	font-weight: 400;
 	font-size: 14px;
 	text-transform: uppercase;
-  margin-left: 165px;
+	margin-left: 165px;
 }
-
 
 .academy {
 	padding-left: 8px;
-  margin-top: 15px;
+	margin-top: 15px;
 }
-.develop{
-  margin-top: 30px;
+
+.develop {
+	margin-top: 30px;
 }
+
 .academy:hover,
 .academy:focus {
 	background-color: var(--basic-white);
@@ -826,22 +828,23 @@ a[href^="tel:"] {
 	margin-top: 47px;
 	margin-bottom: 25px;
 }
-.city-number {
- font: inherit;
- margin-top: 0;
- margin-bottom: 0;
- font-style: normal;
- font-weight: 400;
- font-size: 14px;
- line-height: 21px;
 
+.city-number {
+	font: inherit;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
 }
+
 .city-explanation {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
-	margin-top:23px;
+	margin-top: 23px;
 }
 
 .features-list {
@@ -867,6 +870,7 @@ a[href^="tel:"] {
 	margin-bottom: 0;
 	margin-top: 0;
 }
+
 .reasons-more-second {
 	font-style: normal;
 	font-weight: 400;
@@ -875,6 +879,7 @@ a[href^="tel:"] {
 	margin-top: 23px;
 	margin-bottom: 54px;
 }
+
 .dignity-second {
 	display: flex;
 	flex-wrap: wrap;
@@ -894,15 +899,16 @@ a[href^="tel:"] {
 	margin-bottom: 0;
 }
 
-
-
 .features-second {
 	background-color: var(--light-grey);
 	padding-top: 37px;
 	margin-top: -6px;
 	padding-bottom: 5px;
 }
+
+
 /*Почему-то в мозиле этот блок разваливается. Не могу найти ошибку...С чем это может быть связано?*/
+
 .features-list-second {
 	text-align: center;
 	list-style: none;
@@ -938,15 +944,14 @@ a[href^="tel:"] {
 	margin: 0;
 	margin-right: 46px;
 	padding-top: 29px;
-
-
 }
+
 .sort {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	list-style: none;
-	margin:0;
+	margin: 0;
 	padding-bottom: 0;
 	padding-left: 0;
 	padding-right: 0;
@@ -1007,9 +1012,11 @@ a[href^="tel:"] {
 
 
 /* Стрелки вверх-вниз */
-.arrows{
-  position: relative;
+
+.arrows {
+	position: relative;
 }
+
 .icon-up::before {
 	content: "";
 	position: absolute;
@@ -1018,8 +1025,8 @@ a[href^="tel:"] {
 	height: 10px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-  left:470px;
-  bottom:5px;
+	left: 470px;
+	bottom: 5px;
 }
 
 .icon-up:hover::before,
@@ -1040,8 +1047,8 @@ a[href^="tel:"] {
 	width: 11px;
 	height: 10px;
 	background-repeat: no-repeat;
-  left:495px;
-  bottom:5px;
+	left: 495px;
+	bottom: 5px;
 }
 
 .icon-down:hover::before,
@@ -1049,7 +1056,6 @@ a[href^="tel:"] {
 	background-image: url("../img/icon-down-black.svg");
 	cursor: pointer;
 }
-
 
 .icon-down:active::before {
 	background-image: url("../img/icon-down-blue.svg");
@@ -1071,13 +1077,15 @@ a[href^="tel:"] {
 .settings {
 	display: flex;
 	flex-wrap: wrap;
-  margin-left: -100px;
-  margin-top: 26px;
+	margin-left: -100px;
+	margin-top: 26px;
 }
+
 .form-settings fieldset {
 	padding: 0;
 	margin: 0;
 }
+
 .form-settings ul {
 	font: inherit;
 	list-style: none;
@@ -1088,9 +1096,11 @@ a[href^="tel:"] {
 	color: var(--basic-white);
 	text-transform: uppercase;
 }
-.type-of-house{
-  margin-left: 107px;
+
+.type-of-house {
+	margin-left: 107px;
 }
+
 .decision {
 	font: inherit;
 	color: var(--basic-white);
@@ -1100,18 +1110,20 @@ a[href^="tel:"] {
 	line-height: 21px;
 	text-transform: uppercase;
 }
+
 .filters {
-	margin-top:24px;
+	margin-top: 24px;
 	margin-bottom: 0;
 }
-
 
 .form-settings fieldset {
 	border: none;
 }
+
 .type-of-house fieldset {
 	margin-left: 20px;
 }
+
 .filter-input-checkbox:hover+label,
 .filter-input-checkbox:focus+label {
 	color: var(--basic-blue);
@@ -1138,7 +1150,6 @@ a[href^="tel:"] {
 
 .filter-input-checkbox:disabled+label::before {
 	border: 2px solid var(--blue-brown);
-
 }
 
 .filter-input-checkbox:checked+label::after {
@@ -1175,7 +1186,6 @@ a[href^="tel:"] {
 	margin-bottom: 32px;
 	margin-top: -30px;
 	margin-left: 90px;
-
 }
 
 .show:hover,
@@ -1201,6 +1211,7 @@ a[href^="tel:"] {
 .toddler {
 	margin-right: -30px;
 }
+
 .filter-item {
 	margin: 0;
 	padding: 0;
@@ -1265,7 +1276,7 @@ a[href^="tel:"] {
 	line-height: 21px;
 	text-transform: uppercase;
 	color: var(--basic-white);
-  padding-top: 26px;
+	padding-top: 26px;
 }
 
 .price-controls {
@@ -1280,14 +1291,13 @@ a[href^="tel:"] {
 	border: 2px solid var(--basic-white);
 	border-radius: 2px;
 	text-transform: uppercase;
-  margin-top: -40px;
+	margin-top: -40px;
 	width: 317px;
-  height: 36px;
+	height: 36px;
 }
 
 .min-price {
 	margin-left: -10px;
-
 }
 
 .max-price {
@@ -1300,7 +1310,6 @@ a[href^="tel:"] {
 	font-size: 16px;
 }
 
-
 .price-controls input {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -1310,12 +1319,12 @@ a[href^="tel:"] {
 	color: var(--basic-white);
 	border: none;
 	border-radius: 5px;
-	font:inherit;
+	font: inherit;
 	font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  background-color:transparent;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	background-color: transparent;
 	margin-bottom: 8px;
 	margin-top: -5px;
 }
@@ -1323,19 +1332,22 @@ a[href^="tel:"] {
 .min-price input {
 	width: 10px;
 }
-.max-price input{
+
+.max-price input {
 	width: 35px;
 }
+
 .price-controls {
-	position:absolute;
+	position: absolute;
 }
+
 .price-controls::after {
-	  position: absolute;
-		content: " ";
-		background-image: url("../img/cafe.jpg");
-		width: 2px;
-    height: 22px;
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	  background-repeat: no-repeat;
-	  bottom: 25%;
-	}
+	position: absolute;
+	content: " ";
+	background-image: url("../img/cafe.jpg");
+	width: 2px;
+	height: 22px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-repeat: no-repeat;
+	bottom: 25%;
+}
