@@ -180,7 +180,7 @@ input[type="radio"].visually-hidden {
 	width: 100%;
 	height: 57px;
 	background-repeat: no-repeat;
-	bottom: 27%;
+	bottom: 29.5%;
 }
 
 .reasons {
@@ -188,10 +188,11 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 	background-color: var(--basic-white);
 	text-transform: uppercase;
-	padding-top: 17px;
+	padding-top: 40px;
 	padding-bottom: 51px;
 	margin-bottom: 0;
 	margin-top: -21px;
+
 }
 
 .order {
@@ -199,7 +200,6 @@ input[type="radio"].visually-hidden {
 	background-color: var(--basic-white);
 	text-transform: uppercase;
 	padding-top: 57px;
-	padding-bottom: 82px;
 	margin-top: -14px;
 }
 
@@ -259,6 +259,11 @@ input[type="radio"].visually-hidden {
 	background-color: var(--dark-chocolate);
 }
 
+.map {
+	background-image: url("../img/map.jpg");
+	height: 470px;
+
+}
 
 /* Appointment*/
 
@@ -268,7 +273,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-around;
 	padding-top: 55px;
 	padding-bottom: 52px;
-	padding-right: 25px;
+	padding-right: 30px;
 	padding-left: 55px;
 	background-color: var(--basic-white);
 	text-transform: uppercase;
@@ -344,7 +349,6 @@ input[type="radio"].visually-hidden {
 }
 
 .children>.minus {
-	margin-left: 3px;
 }
 
 .children {}
@@ -407,6 +411,7 @@ input[type="radio"].visually-hidden {
 
 .minus {
 	position: relative;
+	margin-left: 0;
 }
 
 .minus::before {
@@ -468,12 +473,13 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	background-color: var(--basic-blue);
 	border: none;
-	padding-left: 181px;
-	padding-right: 182px;
+	padding-left: 191px;
+	padding-right: 192px;
 	padding-top: 16px;
 	padding-bottom: 16px;
 	font-weight: 700;
 	font-size: 21px;
+	margin-left: -25px;
 }
 
 .button:hover,
@@ -666,6 +672,9 @@ input[type="radio"].visually-hidden {
 	width: 1200px;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
+}
+.page-footer{
+	background: rgba(255, 255, 255, 0.9);
 }
 
 .company-information {
