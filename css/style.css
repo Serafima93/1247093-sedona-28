@@ -1105,10 +1105,13 @@ a[href^="tel:"] {
 	margin-bottom: 0;
 }
 
+
 .form-settings fieldset {
 	border: none;
 }
-
+.type-of-house fieldset {
+	margin-left: 20px;
+}
 .filter-input-checkbox:hover+label,
 .filter-input-checkbox:focus+label {
 	color: var(--basic-blue);
@@ -1213,9 +1216,7 @@ a[href^="tel:"] {
 .range-controls {
 	position: relative;
 	height: 41px;
-	margin-bottom: 15px;
-  margin-top: -15px;
-	padding-top: 39px;
+	padding-top: 19px;
 	padding-right: 20px;
 	padding-left: 20px;
 	border-radius: 5px;
