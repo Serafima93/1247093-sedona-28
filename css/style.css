@@ -1194,7 +1194,11 @@ a[href^="tel:"] {
 
 
 /* Ползунок */
-
+.toddler {
+	/*outline: 5px solid rgba(0, 255, 255, 0.7);
+	outline-offset: -5px;*/
+	margin-right: -30px;
+}
 .filter-item {
 	margin: 0;
 	padding: 0;
@@ -1206,32 +1210,24 @@ a[href^="tel:"] {
 	margin-top: 49px;
 }
 
-.filter-item legend {
-	font-size: 18px;
-	line-height: 24px;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-
 .range-controls {
 	position: relative;
 	height: 41px;
 	padding-top: 19px;
-	padding-right: 20px;
-	padding-left: 20px;
 	border-radius: 5px;
 }
 
 .range-controls .scale {
 	height: 2px;
-	background: var(--basic-black);
-	opacity: 0.3;
+	background: var(--basic-white);
 }
 
 .range-controls .bar {
 	width: 70%;
 	height: 2px;
-	background: var(basic-white);
+	background: var(--basic-white);
+	opacity: 0.3;
+
 }
 
 .range-controls .toggle {
@@ -1253,13 +1249,14 @@ a[href^="tel:"] {
 }
 
 .range-controls .toggle-max {
-	left: 160px;
+	left: 150px;
 }
 
 .price-for-day {
 	font: inherit;
+	font-style: normal;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 21px;
 	text-transform: uppercase;
 	color: var(--basic-white);
@@ -1268,7 +1265,7 @@ a[href^="tel:"] {
 
 .price-controls {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	color: var(--basic-white);
 	font-style: normal;
 	font: inherit;
@@ -1279,24 +1276,51 @@ a[href^="tel:"] {
 	border-radius: 2px;
 	text-transform: uppercase;
   margin-top: -40px;
+	width: 317px;
+  height: 36px;
+}
+
+.min-price {
+	padding-left: 30px;
+}
+
+.max-price {
+	padding-right: 30px;
 }
 
 .price-controls label {
 	text-transform: uppercase;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 16px;
-
 }
 
 .price-controls input {
-	width: 60px;
-	padding: 10px;
-	margin-left: 10px;
+	width: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0;
+	padding-right: 0;
 	text-align: center;
 	color: var(--basic-white);
 	border: none;
 	border-radius: 5px;
-	font-family: inherit;
-	font-size: inherit;
-  background-color:red;
+	font:inherit;
+	font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  background-color:transparent;
 }
+.price-controls {
+	position:absolute;
+}
+.price-controls::after {
+	  position: absolute;
+		content: " ";
+		background-image: url("../img/cafe.jpg");
+		width: 2px;
+    height: 22px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	  background-repeat: no-repeat;
+	  bottom: 25%;
+	}
