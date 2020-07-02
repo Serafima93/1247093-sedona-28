@@ -679,8 +679,8 @@ footer>.company-information {
 	padding-right: 138px;
   padding-top: 23px;
   padding-bottom: 36px;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-	outline-offset: -5px;
+  /*outline: 5px solid rgba(0, 255, 255, 0.7);
+	outline-offset: -5px;*/
 }
 
 .footer-contacts {
@@ -1172,6 +1172,9 @@ a[href^="tel:"] {
 	border-radius: 2px;
 	text-transform: uppercase;
 	background-color: transparent;
+	margin-bottom: 32px;
+	margin-top: -30px;
+	margin-left: 90px;
 
 }
 
@@ -1194,9 +1197,8 @@ a[href^="tel:"] {
 
 
 /* Ползунок */
+
 .toddler {
-	/*outline: 5px solid rgba(0, 255, 255, 0.7);
-	outline-offset: -5px;*/
 	margin-right: -30px;
 }
 .filter-item {
@@ -1244,6 +1246,10 @@ a[href^="tel:"] {
 	cursor: pointer;
 }
 
+.range-controls .toggle:hover {
+	border: 10px solid var(--basic-white);
+}
+
 .range-controls .toggle-min {
 	left: 18px;
 }
@@ -1281,11 +1287,12 @@ a[href^="tel:"] {
 }
 
 .min-price {
-	padding-left: 30px;
+	margin-left: -10px;
+
 }
 
 .max-price {
-	padding-right: 30px;
+	margin-right: -13px;
 }
 
 .price-controls label {
@@ -1294,8 +1301,8 @@ a[href^="tel:"] {
 	font-size: 16px;
 }
 
+
 .price-controls input {
-	width: 40px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 0;
@@ -1310,6 +1317,15 @@ a[href^="tel:"] {
   font-size: 14px;
   line-height: 21px;
   background-color:transparent;
+	margin-bottom: 8px;
+	margin-top: -5px;
+}
+
+.min-price input {
+	width: 10px;
+}
+.max-price input{
+	width: 35px;
 }
 .price-controls {
 	position:absolute;
