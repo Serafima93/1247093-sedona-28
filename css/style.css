@@ -1162,8 +1162,8 @@ a[href^="tel:"] {
 	position: absolute;
 	left: -42px;
 	top: 0;
-	width: 21px;
-	height: 21px;
+	width: 18px;
+	height: 18px;
 	border: 2px solid var(--basic-white);
 	border-radius: 2px;
 }
@@ -1172,10 +1172,20 @@ a[href^="tel:"] {
 	border: 2px solid var(--blue-brown);
 }
 
+.filter-input-checkbox:checked+label::before {
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  width: 26px;
+  height: 23px;
+
+}
+
 .filter-input-checkbox:checked+label::after {
 	content: "";
 	position: absolute;
-	top: 4px;
+	top: 1px;
 	left: -38px;
 	width: 23px;
 	height: 18px;
