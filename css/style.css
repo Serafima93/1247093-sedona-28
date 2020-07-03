@@ -896,19 +896,17 @@ a[href^="tel:"] {
 
 .dignity-second {
 	display: flex;
-	flex-wrap: wrap;
 	text-align: center;
 }
 
 .explanation-second {
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: column;
 	background-color: var(--basic-blue);
 	text-transform: uppercase;
 	color: var(--basic-white);
-	padding-right: 49px;
-	padding-left: 50px;
+	padding-right: 50px;
+	padding-left: 49px;
 	max-height: 256px;
 	max-width: 400px;
 	margin-bottom: 0;
