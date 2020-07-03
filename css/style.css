@@ -358,6 +358,7 @@ input[type="radio"].visually-hidden {
 }
 
 .children>.minus {
+  margin-left: 5px;
 }
 
 .children label {
@@ -447,8 +448,6 @@ input[type="radio"].visually-hidden {
 	padding-right: 30px;
 }
 
-/*Почему у меня при нажатие высвечивается плюс? */
-
 .plus {
 	position: relative;
 }
@@ -466,7 +465,7 @@ input[type="radio"].visually-hidden {
 }
 
 .plus:hover::before,
-.minus:focus::before {
+.plus:focus::before {
 	background-image: url("../img/Union-black.svg");
 	cursor: pointer;
 }
