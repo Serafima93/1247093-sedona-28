@@ -228,10 +228,10 @@ input[type="radio"].visually-hidden {
 
 .button-search {
 	font: inherit;
-	padding-left: 135px;
-	padding-right: 134px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-left: 140px;
+	padding-right: 138px;
+	padding-top: 28px;
+	padding-bottom: 28px;
 	background-color: var(--brown);
 	color: var(--basic-white);
 	font-weight: 700;
@@ -239,6 +239,8 @@ input[type="radio"].visually-hidden {
 	border: none;
 	text-transform: uppercase;
 	display: inline-block;
+	max-width: 568px;
+
 }
 
 .button-search:hover,
@@ -273,13 +275,15 @@ input[type="radio"].visually-hidden {
 	justify-content: space-around;
 	padding-top: 55px;
 	padding-bottom: 52px;
-	padding-right: 30px;
+	padding-right: 35px;
 	padding-left: 55px;
 	background-color: var(--basic-white);
 	text-transform: uppercase;
 	color: var(--basic-black);
 	margin: auto;
 	box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+	max-width: 568px;
+
 }
 
 .appointment-item {
@@ -474,10 +478,10 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	background-color: var(--basic-blue);
 	border: none;
-	padding-left: 191px;
-	padding-right: 192px;
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-left: 194px;
+	padding-right: 197px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	font-weight: 700;
 	font-size: 21px;
 	margin-left: -25px;
@@ -906,6 +910,7 @@ a[href^="tel:"] {
 	padding-right: 49px;
 	padding-left: 50px;
 	max-height: 256px;
+	max-width: 400px;
 	margin-bottom: 0;
 }
 
