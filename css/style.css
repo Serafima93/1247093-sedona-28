@@ -28,18 +28,17 @@ body {
 	line-height: 1.5;
 	font-weight: 700;
 	color: var(--basic-black);
-	background-color: var(--basic-white);
+	background-color: var(--neutral);
 	background-position: top center;
+
+
 }
 
 .container {
 	box-sizing: border-box;
 	width: 1280px;
-	box-shadow: 1px 1px 1px 1px var(--basic-black);
 	margin: 0 auto;
 	padding: 0 40px;
-	background-color: var(--background);
-	/* Буду рада комментариям про обводку, правильно ли я сделала. Цвет взяла из фигмы, но тут вроде темнее...*/
 }
 
 .text-center {
@@ -79,6 +78,7 @@ input[type="radio"].visually-hidden {
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
 	align-content: start;
+
 }
 
 
@@ -104,6 +104,8 @@ input[type="radio"].visually-hidden {
 	padding-right: 72px;
 	min-height: 58px;
 	list-style: none;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+
 }
 
 / .site-navigation-current a:not([href]) {
@@ -150,6 +152,9 @@ input[type="radio"].visually-hidden {
 
 
 /* Main-part */
+.main-part {
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
 
 .introduction {
 	font-size: 21px;
@@ -677,6 +682,8 @@ input[type="radio"].visually-hidden {
 	width: 1200px;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+
 }
 .page-footer{
 	background: rgba(255, 255, 255, 0.9);
