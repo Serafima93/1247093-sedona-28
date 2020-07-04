@@ -572,10 +572,8 @@ input[type="radio"].visually-hidden {
 	color: var(--basic-blue);
 	cursor: pointer;
 }
-.hotel-link:visited {
-  color:var(--basic-black);
 
-}
+
 .hotel-link:active {
 	color: var(--basic-black);
 	cursor: pointer;
@@ -991,13 +989,14 @@ a[href^="tel:"] {
 	border-bottom: 1px dashed var(--basic-blue);
 	cursor: pointer;
 }
-.about-price:visited {
-  color:  var(--basic-blue);
-}
+
 
 .about-price:active {
 	color: var(--basic-black);
 	cursor: pointer;
+}
+.about-price:visited {
+  color:  var(--basic-blue);
 }
 
 .parametrs {
@@ -1022,10 +1021,6 @@ a[href^="tel:"] {
 	cursor: pointer;
 	opacity: 1;
 }
-.more:visited {
-  color: var(--basic-black);
-}
-
 
 .more:active {
 	color: var(--basic-black);
@@ -1033,6 +1028,7 @@ a[href^="tel:"] {
 	opacity: 1;
 	border: none;
 }
+
 
 .sorting {
 	padding-right: 40px;
