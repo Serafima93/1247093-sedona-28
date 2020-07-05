@@ -280,9 +280,10 @@ input[type="radio"].visually-hidden {
 /* Appointment*/
 
 .formsearch {
-	display: inline-flex;
+	/*display: inline-flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-around;*/
+	display: none;
 	padding-top: 55px;
 	padding-bottom: 52px;
 	padding-right: 38px;
@@ -296,6 +297,32 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top:2170px;
 	left: 667px
+}
+
+
+.hidden{
+	display: block;
+	animation: bounce 0.9s;
+
+}
+/* Animations */
+
+@keyframes bounce {
+  30% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .appointment-item {
