@@ -269,9 +269,12 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+	box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 
-  padding-bottom: 200px;
+}
 
+.map iframe{
+	border: none;
 }
 
 /* Appointment*/
@@ -282,7 +285,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-around;
 	padding-top: 55px;
 	padding-bottom: 52px;
-	padding-right: 37px;
+	padding-right: 38px;
 	padding-left: 57px;
 	background-color: var(--basic-white);
 	text-transform: uppercase;
@@ -290,6 +293,9 @@ input[type="radio"].visually-hidden {
 	margin: auto;
 	box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 	max-width: 568px;
+	position: absolute;
+	top:2170px;
+	left: 667px
 }
 
 .appointment-item {
@@ -690,7 +696,7 @@ input[type="radio"].visually-hidden {
 .page-footer{
 	background: rgba(255, 255, 255, 0.9);
   position: absolute;
-  top: 2640px;
+  top: 2642px;
 }
 
 .company-information {
