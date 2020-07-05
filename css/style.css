@@ -282,8 +282,8 @@ input[type="radio"].visually-hidden {
 	justify-content: space-around;
 	padding-top: 55px;
 	padding-bottom: 52px;
-	padding-right: 35px;
-	padding-left: 55px;
+	padding-right: 37px;
+	padding-left: 57px;
 	background-color: var(--basic-white);
 	text-transform: uppercase;
 	color: var(--basic-black);
@@ -355,7 +355,6 @@ input[type="radio"].visually-hidden {
 }
 
 .adults>.minus {
-	margin-left: 8px;
 }
 
 .children>.minus {
