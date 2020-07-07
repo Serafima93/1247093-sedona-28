@@ -187,6 +187,9 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 	bottom: 29.5%;
 }
+.background {
+  background-color: var(--basic-blue);
+}
 
 .reasons {
 	font-size: 14px;
