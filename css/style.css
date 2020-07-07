@@ -360,7 +360,6 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-item input:focus {
-	border: 2px solid var(--blue-grey);
 	background-color: var(--basic-white);
 }
 
@@ -388,7 +387,6 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-number input:focus {
-	border: 2px solid var(--blue-grey);
 	background-color: var(--basic-white);
 }
 
