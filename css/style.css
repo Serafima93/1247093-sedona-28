@@ -108,7 +108,7 @@ input[type="radio"].visually-hidden {
 
 }
 
-/ .site-navigation-current a:not([href]) {
+.site-navigation-current a:not([href]) {
 	background-color: var(--basic-black);
 }
 
