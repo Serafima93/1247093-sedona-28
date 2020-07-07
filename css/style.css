@@ -1383,7 +1383,6 @@ a[href^="tel:"] {
 .min-price {
 	margin-left: -10px;
 }
-
 .max-price {
 	margin-right: -13px;
 }
@@ -1415,11 +1414,11 @@ a[href^="tel:"] {
 }
 
 .min-price input {
-	width: 10px;
+	max-width: 25px;
 }
 
 .max-price input {
-	width: 35px;
+	max-width: 45px;
 }
 
 .price-controls {
