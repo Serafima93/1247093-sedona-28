@@ -395,13 +395,11 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 }
 
-.adults-input {
+.adults .min-adults {
 	margin-left: 16px;
 }
 
-.children>.minus {
-  margin-left: 0px;
-}
+
 
 .children label {
 	margin-top: 7px;
