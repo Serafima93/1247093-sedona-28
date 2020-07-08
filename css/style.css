@@ -30,8 +30,6 @@ body {
 	color: var(--basic-black);
 	background-color: var(--neutral);
 	background-position: top center;
-
-
 }
 
 .container {
@@ -105,7 +103,6 @@ input[type="radio"].visually-hidden {
 	min-height: 58px;
 	list-style: none;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-
 }
 
 .site-navigation-current a:not([href]) {
@@ -431,7 +428,7 @@ input[type="radio"].visually-hidden {
 .calendar {
 	width: 21px;
 	height: 23px;
-	background-color: var(-neutra);
+	background-color: var(-neutral);
 	position: relative;
 	right: 35px;
 	top: 5px;
@@ -579,9 +576,6 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-picture {
-	/*Вопрос по картинке. Почему на пиксель перфекте показывает что картинка больше.
-     С масштабом все в порядке,с параметрами тоже.
-     В фигме проверила*/
 	margin-right: 29px;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -967,9 +961,6 @@ a[href^="tel:"] {
 	padding-bottom: 5px;
 }
 
-
-/*Почему-то в мозиле этот блок разваливается. Не могу найти ошибку...С чем это может быть связано?*/
-
 .features-list-second {
 	text-align: center;
 	list-style: none;
@@ -1030,13 +1021,11 @@ a[href^="tel:"] {
 	cursor: pointer;
 }
 
-
 .about-price:active {
 	color: var(--basic-black);
 	cursor: pointer;
 	border-bottom: none;
 }
-
 
 .parametrs {
 	padding-right: 32px;
