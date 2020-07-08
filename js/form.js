@@ -6,7 +6,7 @@ var exit = form.querySelector(".exit");
 
 button.addEventListener("click", function () {
   form.classList.toggle("hidden");
-  form.classList.toggle("visib");
+  form.classList.toggle("visible");
   enter.focus();
 });
 
