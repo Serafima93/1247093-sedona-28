@@ -283,14 +283,6 @@ input[type="radio"].visually-hidden {
 /* Appointment*/
 
 .formsearch {
-	/*display: inline-flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-  bottom: 201px;
-  left: 315px;
-  display: none;
-  padding-right: 35px;
-  padding-left: 56px;*/
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-around;
