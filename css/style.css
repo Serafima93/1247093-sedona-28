@@ -395,7 +395,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 }
 
-.adults>.minus {
+.adults-input {
 	margin-left: 16px;
 }
 
