@@ -4,8 +4,8 @@ var enter = form.querySelector(".enter");
 var sent = form.querySelector(".button");
 var exit = form.querySelector(".exit");
 
-if (button) {
-button.addEventListener("click", function () {
+if (form) {
+  button.addEventListener("click", function () {
   form.classList.toggle("hidden");
   form.classList.toggle("visible");
   enter.focus();
