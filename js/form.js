@@ -11,9 +11,10 @@ if (button) {
   enter.focus();
 });
 }
-if (form)
+if (form) {
 form.addEventListener("submit", function (evt) {
   if (!enter.value || !exit.value) {
     evt.preventDefault();
      }
 });
+}
