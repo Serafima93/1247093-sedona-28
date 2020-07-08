@@ -13,8 +13,8 @@ if (button) {
 }
 if (form) {
 form.addEventListener("submit", function (evt) {
-  if (!enter.value || !exit.value) {
-    evt.preventDefault();
+  evt.preventDefault();
+  if (!(enter.value || exit.value)) {return;
      }
 });
 }
