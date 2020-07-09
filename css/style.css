@@ -1250,7 +1250,7 @@ a[href^="tel:"] {
 }
 
 .filter-input-checkbox:checked:disabled+label::after {
-	background-image: url("../img/shape-2.svg");
+	background-image: url("../img/shape-second.svg");
 }
 
 .show {
