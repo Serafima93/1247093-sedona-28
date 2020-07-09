@@ -19,6 +19,7 @@
 	--blue-brown: #6A6A6A;
   --box-shadow:rgba(0, 1, 1, 0.15);
   --box-shadow-second:rgba(0, 0, 0, 0.25);
+  --footer-opacity:rgba(255, 255, 255, 0.9);
 }
 
 body {
@@ -136,7 +137,9 @@ input[type="radio"].visually-hidden {
 	color: var(--basic-black);
 	opacity: 0.3;
 }
-
+ .active a {
+   color: var(--brown);
+ }
 
 /* Logo */
 
@@ -730,7 +733,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-footer {
-	background: rgba(255, 255, 255, 0.9);
+	background: var(--footer-opacity);
 	position: absolute;
 	top: 2642px;
 }
@@ -1224,10 +1227,6 @@ a[href^="tel:"] {
 	border-radius: 2px;
 }
 
-.filter-input-checkbox:disabled+label::before {
-	border: 2px solid var(--blue-brown);
-}
-
 .filter-input-checkbox:checked+label::before {
 	background-image: url("../img/checkbox-on.svg");
 	background-repeat: no-repeat;
@@ -1252,7 +1251,9 @@ a[href^="tel:"] {
 .filter-input-checkbox:checked:disabled+label::after {
 	background-image: url("../img/shape-second.svg");
 }
-
+.filter-input-checkbox:checked:disabled+label::before {
+  background-image: url("../img/shape-brown.svg");
+}
 .show {
 	font: inherit;
 	padding-left: 35px;
