@@ -267,6 +267,7 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
+  background-color: var(--neutral);
 	background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1125,6 +1126,7 @@ a[href^="tel:"] {
 /* Форма настороек параметров гостиниц */
 
 .form-settings {
+  background-color: var(--neutral);
 	background-image: url("../img/blur.jpg");
 	display: flex;
 	flex-direction: row;
