@@ -1012,8 +1012,11 @@ a[href^="tel:"] {
 	padding-bottom: 31px;
 }
 
-.search h2 {
+.search p {
 	margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
 	margin-right: 46px;
 	padding-top: 29px;
 }
@@ -1038,7 +1041,7 @@ a[href^="tel:"] {
 .about-price:hover,
 .about-price:focus {
 	color: var(--basic-blue);
-	border-bottom: 1px dashed var(--basic-blue);
+	border-bottom: 1px dotted var(--basic-blue);
 	cursor: pointer;
 }
 
@@ -1061,7 +1064,7 @@ a[href^="tel:"] {
 .more {
 	color: var(--basic-black);
 	opacity: 0.3;
-	border-bottom: 1px dashed var(--basic-blue);
+	border-bottom: 1px dotted var(--basic-blue);
 }
 
 .more:hover,
