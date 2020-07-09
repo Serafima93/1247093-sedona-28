@@ -1010,6 +1010,7 @@ a[href^="tel:"] {
 	padding-left: 73px;
 	padding-right: 73px;
 	padding-bottom: 31px;
+  position: relative;
 }
 
 .search p {
@@ -1031,6 +1032,7 @@ a[href^="tel:"] {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 31px;
+  max-width: 700px;
 }
 
 .about-price {
@@ -1094,10 +1096,6 @@ a[href^="tel:"] {
 
 /* Стрелки вверх-вниз */
 
-.arrows {
-	position: relative;
-}
-
 .icon-up::before {
 	content: "";
 	position: absolute;
@@ -1106,8 +1104,8 @@ a[href^="tel:"] {
 	height: 10px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	left: 470px;
-	bottom: 5px;
+  right:96px;
+	bottom: 40px;
 }
 
 .icon-up:hover::before,
@@ -1128,8 +1126,8 @@ a[href^="tel:"] {
 	width: 11px;
 	height: 10px;
 	background-repeat: no-repeat;
-	left: 495px;
-	bottom: 5px;
+  right:75px;
+	bottom: 40px;
 }
 
 .icon-down:hover::before,
