@@ -12,10 +12,10 @@ if (buttonSearch) {
     });
 }
 if (form) {
-  form.addEventListener("submit", function(evt) {
-      evt.preventDefault();
-      if (!(enter.value || exit.value)) {
-      return;
-      }
-  });
+    form.addEventListener("submit", function(evt) {
+        evt.preventDefault();
+        if (!(enter.value || exit.value)) {
+            return;
+        }
+    });
 }
