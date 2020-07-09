@@ -245,6 +245,7 @@ input[type="radio"].visually-hidden {
 	border: none;
 	text-transform: uppercase;
 	display: inline-block;
+  vertical-align: top;
 	max-width: 568px;
 }
 
