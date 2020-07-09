@@ -1226,13 +1226,13 @@ a[href^="tel:"] {
 	left: -38px;
 	width: 23px;
 	height: 18px;
-	background-image: url("../img/Shape.svg");
+	background-image: url("../img/shape.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 
 .filter-input-checkbox:checked:disabled+label::after {
-	background-image: url("../img/Shape-2.svg");
+	background-image: url("../img/shape-2.svg");
 }
 
 .show {
