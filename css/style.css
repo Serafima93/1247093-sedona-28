@@ -206,7 +206,7 @@ input[type="radio"].visually-hidden {
 	background-color: var(--basic-white);
 	text-transform: uppercase;
 	padding-top: 57px;
-	margin-top: -14px;
+	margin-top: 0px;
 }
 
 .interes {
@@ -937,8 +937,8 @@ a[href^="tel:"] {
 }
 
 .reasons-more-second {
-	font-style: normal;
-	font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
 	margin-top: 23px;
@@ -965,7 +965,7 @@ a[href^="tel:"] {
 
 .features-second {
 	background-color: var(--light-grey);
-	padding-top: 37px;
+	padding-top: 47px;
 	margin-top: -6px;
 	padding-bottom: 5px;
 }
@@ -981,6 +981,9 @@ a[href^="tel:"] {
 }
 
 .tagline-second {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
 	font-size: 21px;
 	text-transform: uppercase;
 	background-color: var(--light-grey);
