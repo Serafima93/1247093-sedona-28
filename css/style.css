@@ -232,22 +232,25 @@ input[type="radio"].visually-hidden {
 }
 
 .interes {
+  font:inherit;
+  color:var(--basic-black);
 	line-height: 24px;
 	font-size: 30px;
 	font-weight: 700;
 	background-color: var(--basic-white);
 	text-transform: uppercase;
 	margin-top: 0;
+  margin-bottom: 0;
 }
 
 .appointment-info {
 	font: inherit;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
 	text-transform: uppercase;
-	margin-top: 20px;
+	margin-top: 30px;
 	margin-bottom: 45px;
 }
 
@@ -996,7 +999,9 @@ a[href^="tel:"] {
 	max-width: 400px;
 	margin-bottom: 0;
 }
-
+.city-devil {
+  margin-top: 50px;
+}
 .features-second {
 	background-color: var(--light-grey);
 	margin-top: -6px;
