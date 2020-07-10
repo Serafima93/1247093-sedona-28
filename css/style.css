@@ -184,7 +184,7 @@ input[type="radio"].visually-hidden {
 	font-size: 21px;
 	background-color: var(--basic-white);
 	text-transform: uppercase;
-	padding-top: 25px;
+	padding-top: 20px;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-bottom: 20px;
@@ -937,12 +937,13 @@ a[href^="tel:"] {
 	grid-template-columns: 1fr 1fr 1fr;
 	max-width: 1200px;
 	text-transform: uppercase;
-	padding-bottom: 82px;
-	padding-top: 46px;
 	margin-bottom: 0;
 	margin-top: -6px;
+  padding-left: 0;
 }
-
+.feature-item {
+  padding-top: 56px;
+}
 .reasons-more {
   font: inherit;
 	font-style: normal;
@@ -953,16 +954,20 @@ a[href^="tel:"] {
 	padding-top: 0;
 	margin-bottom: 0;
 	margin-top: 0;
+  padding-bottom: 80px;
 }
-
 .home {
-	margin-top: 5px;
+  margin-top: 0px;
 }
-
-.hamburger {
-	margin-top: 5px;
+.hamburger{
+  margin-top: 2px;
 }
-
+.home-picture{
+  margin-top: 5px;
+}
+.hamburger-picture {
+  margin-top: 5px;
+}
 .reasons-more-second {
   font: inherit;
   color:var(--grey-black);
