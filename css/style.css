@@ -819,6 +819,9 @@ a[href^="tel:"] {
 	padding: 0;
 	padding-left: 26px;
 }
+.footer-social-hotel {
+  padding-left: 27px;
+}
 
 .social-button {
 	display: flex;
