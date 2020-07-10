@@ -366,16 +366,25 @@ input[type="radio"].visually-hidden {
 	background-color: var(--neutral);
 	padding-left: 15px;
 	padding-right: 175px;
-	padding-top: 6px;
+	padding-top: 5px;
 	padding-bottom: 6px;
 	margin-bottom: 30px;
 	margin-left: 20px;
 	text-transform: uppercase;
 	border: none;
+  max-width: 346px;
+}
+input.exit {
+  margin-left: 15px;
 }
 
+
 .appointment-item label {
-	margin-left: 15px;
+	margin-left: 23px;
+}
+.appointment-item .label-exit {
+  margin-left: 25px;
+  margin-top: -10px;
 }
 
 .appointment-item input:hover {
@@ -397,7 +406,11 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-number label {
-	margin-left: 15px;
+	margin-left: 25px;
+}
+.adults label {
+	margin-top: 8px;
+	padding-right: 27px;
 }
 
 .appointment-number input {
@@ -423,7 +436,7 @@ input[type="radio"].visually-hidden {
 }
 
 .adults .min-adults {
-	margin-left: 16px;
+	margin-left: 12px;
 }
 
 .children label {
@@ -438,11 +451,6 @@ input[type="radio"].visually-hidden {
 	height: 38px;
 	padding: 0;
 	text-align: center;
-}
-
-.adults label {
-	margin-top: 8px;
-	padding-right: 27px;
 }
 
 .adults input {
@@ -499,9 +507,9 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
-.exp {
+.label-children {
 	padding-right: 0;
-	margin-right: 7px;
+	margin-right: 5px;
 }
 
 .plus {
@@ -544,7 +552,8 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 15px;
 	font-weight: 700;
 	font-size: 21px;
-	margin-left: 5px;
+	margin-left: 0px;
+  margin-top: -2px;
 }
 
 .button:hover,
