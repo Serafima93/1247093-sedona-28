@@ -433,34 +433,24 @@ input[type="radio"].visually-hidden {
 }
 
 .calendar {
-	width: 21px;
-	height: 23px;
-	background-color: var(-neutral);
-	position: relative;
-	right: 35px;
+  width: 21px;
+  height: 23px;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  right: 35px;
 	top: 5px;
 }
-
 .calendar:hover,
 .calendar:focus {
-	background-color: var(--neutral);
+	background-image:url("../img/calendar-black.svg");
 }
-
-.calendar:hover path,
-.calendar:focus path {
-	fill: var(--basic-black);
-	cursor: pointer;
-}
-
 .calendar:active {
-	fill: var(--basic-white);
-	cursor: pointer;
+  background-image:url("../img/calendar-blue.svg");
 }
-
-.calendar:active path {
-	fill: var(--basic-blue);
-}
-
 .minus {
 	position: relative;
 	margin-left: 0;
