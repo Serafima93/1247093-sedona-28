@@ -1248,12 +1248,14 @@ a[href^="tel:"] {
 .filters {
 	margin-top: 24px;
 	margin-bottom: 0;
-  margin-left: 5px;
-  padding-left: 34px;
+  margin-left: 16px;
+  padding-left: 25px;
 }
 .filters-second {
   padding-left: 40px;
   margin-left: 5px;
+}
+.comfort {
 }
 .form-settings fieldset {
 	border: none;
@@ -1275,7 +1277,9 @@ a[href^="tel:"] {
 	user-select: none;
 	padding-bottom: 26px;
 }
-
+.comfort {
+  margin-left:-3px;
+}
 .filter-input-checkbox+label::before {
 	content: "";
 	position: absolute;
