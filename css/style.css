@@ -1208,10 +1208,11 @@ a[href^="tel:"] {
 .settings {
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: -100px;
 	margin-top: 26px;
 }
-
+.infrastructure {
+  margin-left: -94px;
+}
 .form-settings fieldset {
 	padding: 0;
 	margin: 0;
@@ -1231,7 +1232,6 @@ a[href^="tel:"] {
 .type-of-house {
 	margin-left: 107px;
 }
-
 .decision {
 	font: inherit;
 	color: var(--basic-white);
@@ -1241,18 +1241,26 @@ a[href^="tel:"] {
 	line-height: 21px;
 	text-transform: uppercase;
 }
+.decision-type {
+  margin-left: -5px;
+}
 
 .filters {
 	margin-top: 24px;
 	margin-bottom: 0;
+  margin-left: 5px;
+  padding-left: 34px;
 }
-
+.filters-second {
+  padding-left: 40px;
+  margin-left: 5px;
+}
 .form-settings fieldset {
 	border: none;
 }
 
 .type-of-house fieldset {
-	margin-left: 20px;
+	margin-left: 15px;
 }
 
 .filter-input-checkbox:hover+label,
@@ -1265,7 +1273,7 @@ a[href^="tel:"] {
 	display: block;
 	cursor: pointer;
 	user-select: none;
-	padding-bottom: 25px;
+	padding-bottom: 26px;
 }
 
 .filter-input-checkbox+label::before {
