@@ -112,20 +112,26 @@ input[type="radio"].visually-hidden {
 	background-color: var(--basic-black);
 }
 
-.Selections:nth-child(2) {
-	margin-right: 130px;
-}
-
-.Selections:nth-child(3) {
-	margin-left: 100px;
-}
-
 .site-navigation a {
 	color: var(--basic-black);
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 26px;
+
+}
+.selections {
+  width: 15%;
+  text-align: left;
+}
+.selections:nth-child(2) {
+  margin-right: 200px;
+}
+.selections:nth-child(3) {
+  text-align: right;
+}
+.selections:nth-child(4) {
+  text-align: right;
 }
 
 .site-navigation a:hover,
