@@ -1054,7 +1054,7 @@ a[href^="tel:"] {
 	margin-bottom: 0;
 	padding-left: 73px;
 	padding-right: 73px;
-	padding-bottom: 31px;
+	padding-bottom: 28px;
   position: relative;
 }
 
@@ -1064,7 +1064,7 @@ a[href^="tel:"] {
   font-weight: 700;
   font-size: 21px;
 	margin-right: 46px;
-	padding-top: 29px;
+	padding-top: 28px;
 }
 
 .sort {
@@ -1079,7 +1079,18 @@ a[href^="tel:"] {
 	padding-top: 31px;
   max-width: 700px;
 }
+.sort li {
+  padding-left: 5px;
+}
+.sort li:nth-child(2) {
+  padding-right: 40px;
+  padding-left: 0px;
 
+}
+.sort li:nth-child(3) {
+  padding-left: 0px;
+  margin-left: -5px;
+}
 .about-price {
 	color: var(--basic-blue);
 	cursor: pointer;
@@ -1156,7 +1167,7 @@ a[href^="tel:"] {
 	background-repeat: no-repeat;
 	background-position: 0 0;
   right:96px;
-	bottom: 40px;
+	bottom: 38px;
 }
 
 .icon-up:hover::before,
@@ -1178,7 +1189,7 @@ a[href^="tel:"] {
 	height: 10px;
 	background-repeat: no-repeat;
   right:75px;
-	bottom: 40px;
+	bottom: 38px;
 }
 
 .icon-down:hover::before,
