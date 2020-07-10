@@ -999,7 +999,6 @@ a[href^="tel:"] {
 
 .features-second {
 	background-color: var(--light-grey);
-	padding-top: 47px;
 	margin-top: -6px;
 	padding-bottom: 5px;
 }
@@ -1013,16 +1012,21 @@ a[href^="tel:"] {
 	margin: 0;
 	padding: 0;
 }
+.feature-item-second {
+  padding-top: 45px;
 
+}
 .tagline-second {
+  font:inherit;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 21px;
 	font-size: 21px;
 	text-transform: uppercase;
+  color:var(--basic-black);
 	background-color: var(--light-grey);
 	margin-top: 0;
-	margin-bottom: 25px;
+	margin-bottom: 28px;
 }
 
 .searching {
