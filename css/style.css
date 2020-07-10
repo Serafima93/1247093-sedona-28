@@ -1022,7 +1022,6 @@ a[href^="tel:"] {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 31px;
-  max-width: 700px;
 }
 
 .about-price {
@@ -1074,15 +1073,21 @@ a[href^="tel:"] {
 }
 
 .sorting {
-	padding-right: 40px;
 	font-style: normal;
 	font: inherit;
 	text-transform: uppercase;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 18px;
+  padding-top: 30px;
+  padding-right: 35px;
+  margin: 0;
 }
-
+.sorting-first {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 /* Стрелки вверх-вниз */
 
