@@ -118,7 +118,6 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 26px;
-
 }
 .selections {
   width: 15%;
@@ -202,8 +201,12 @@ input[type="radio"].visually-hidden {
 }
 
 .reasons {
+  font: inherit;
+  font-style: normal;
+  line-height: 26px;
 	font-size: 14px;
 	font-weight: 400;
+  color:var(--grey-black);
 	background-color: var(--basic-white);
 	text-transform: uppercase;
 	padding-top: 40px;
@@ -899,7 +902,9 @@ a[href^="tel:"] {
 	font-size: 14px;
 	line-height: 21px;
 }
-
+.city-black{
+  color:var(--grey-black);
+}
 .city-explanation {
 	font-style: normal;
 	font-weight: 400;
@@ -923,10 +928,12 @@ a[href^="tel:"] {
 }
 
 .reasons-more {
+  font: inherit;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
+  color: var(--grey-black)
 	padding-top: 0;
 	margin-bottom: 0;
 	margin-top: 0;
@@ -941,6 +948,8 @@ a[href^="tel:"] {
 }
 
 .reasons-more-second {
+  font: inherit;
+  color:var(--grey-black);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
