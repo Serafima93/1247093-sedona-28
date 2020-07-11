@@ -1380,6 +1380,10 @@ a[href^="tel:"] {
 	background-image: url("../img/shape-brown.svg");
 }
 
+.filter-input-checkbox:disabled+label::before {
+  border-color:var(--blue-brown);
+}
+
 .show {
 	font: inherit;
 	padding-left: 35px;
