@@ -1450,6 +1450,9 @@ a[href^="tel:"] {
 	height: 2px;
 	background: var(--basic-white);
 }
+.scale {
+  margin-left: 5px;
+}
 
 .range-controls .bar {
 	width: 70%;
