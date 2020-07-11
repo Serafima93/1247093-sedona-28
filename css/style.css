@@ -990,7 +990,8 @@ a[href^="tel:"] {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
-	color: var(--grey-black) padding-top: 0;
+	color: var(--grey-black);
+  padding-top: 0;
 	margin-bottom: 0;
 	margin-top: 0;
 	padding-bottom: 82px;
